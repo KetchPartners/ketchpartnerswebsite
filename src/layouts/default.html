@@ -1,0 +1,69 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketch Partners</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+<body>
+  <nav data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar">
+      <div class="top-bar-left" id="ketch-logo">
+        <ul class="no-bullet">
+         <li><a href="#"><img src="{{root}}assets/img/logo-top-bar.png" alt="Ketch Partners Logo" /></a></li>
+       </ul>
+      </div>
+      <div class="top-bar-right">
+         <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+          <li><a href="{{root}}index.html">Home</a></li>
+          <li><a href="{{root}}about.html">About Us</a></li>
+          <li><a href="{{root}}services.html">Services</a></li>
+          <li><a href="{{root}}testimonials.html">Testimonials</a></li>
+          <li><a href="{{root}}contact.html">Contact</a></li>
+
+        </ul>
+
+
+
+      </div>
+      </div>
+      </div>
+  </nav>
+  <main>
+{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+{{> body}}
+</main>
+
+<footer class="ecommerce-footer">
+
+  <div class="ecommerce-footer-bottom-bar row">
+    <div class="small-12 medium-5 columns">
+      <ul class="bottom-links">
+        <li><a href="{{root}}privacy.html">Privacy Policy</a></li>
+        <li><a href="{{root}}terms.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-2 columns ecommerce-footer-logomark">
+      <a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar.png"/></a>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <div class="bottom-copyright">
+        <span>©2018 Ketch Partners. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
