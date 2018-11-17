@@ -1,16 +1,18 @@
 $hero-height: 60vh;
 
 .hero-section {
-  background: url('../img/ketch-team.jpg') 50% no-repeat;
+  background: url('../img/sailing-team-about.jpg') 50% no-repeat;
   background-size: cover;
   height: $hero-height;
   text-align: center;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
+  color: $white;
 
   .hero-section-text {
-    color: $white;
-    text-shadow: 1px 1px 2px $black;
+    color: $primary-color;
+
   }
 }
+

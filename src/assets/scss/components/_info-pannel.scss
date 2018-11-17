@@ -1,11 +1,11 @@
 .callout.info-pannel {
     background-color: $light-gray;
-    margin: 0px;
+    margin: 10px;
     padding: 0px;
 
 h2 {
     background-color: $secondary-color;
-    padding: 5px;
+    padding: 0px;
 
 
 }
@@ -22,3 +22,24 @@ p {
 
 }
 
+
+.ketch-team {
+  width: 100%;
+    align-items: center;
+}
+
+.ketch-team-responsive {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.ketch-clients {
+	background-color: $secondary-color;
+	margin: 0px 10px 0px 10px;
+}
+
+.ketch-clients-section img {
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+}
