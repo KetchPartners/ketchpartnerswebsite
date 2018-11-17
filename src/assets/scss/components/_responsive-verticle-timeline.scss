@@ -17,7 +17,7 @@ $timeline-item-card-radius: $global-radius;
 
 // Timeline
 .timeline {
-  margin: 5px auto;
+  margin: 10px auto;
   padding: 0 10px;
   position: relative;
   transition: $timeline-transition;
@@ -167,6 +167,6 @@ $timeline-item-card-radius: $global-radius;
 }
 
 .timeline-header-background {
-  margin-top: 15px;
+//  margin-top: 10px;
   background-color: $secondary-color;
 }
