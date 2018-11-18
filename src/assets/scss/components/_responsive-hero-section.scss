@@ -31,3 +31,18 @@ $hero-height: 60vh;
     color: $primary-color;
   }
 }
+
+
+.hero-section3 {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+  }
+}
