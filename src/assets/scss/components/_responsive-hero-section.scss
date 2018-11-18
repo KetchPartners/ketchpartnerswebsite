@@ -16,3 +16,18 @@ $hero-height: 60vh;
   }
 }
 
+
+.hero-section2 {
+  background: url('https://via.placeholder.com/1366X200') 50% no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $primary-color;
+  }
+}
