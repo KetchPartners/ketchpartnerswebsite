@@ -18,14 +18,14 @@ $hero-height: 60vh;
 
 
 .hero-section2 {
-  background: url('https://via.placeholder.com/1366X200') 50% no-repeat;
+  background: url('../img/testimonial-stars.jpg') 50% no-repeat;
   background-size: cover;
   height: $hero-height;
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
-  color: $white;
+  color: $primary-color;
 
   .hero-section-text {
     color: $primary-color;
@@ -34,6 +34,21 @@ $hero-height: 60vh;
 
 
 .hero-section3 {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+  }
+}
+
+
+.hero-section4 {
   background-color: $primary-color;
   height: auto;
   text-align: center;
