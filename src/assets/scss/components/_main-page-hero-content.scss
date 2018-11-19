@@ -14,6 +14,7 @@ $hero-full-screen-text-color: $white;
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
+
   }
 
   .top-content-section {
@@ -32,7 +33,7 @@ $hero-full-screen-text-color: $white;
 
   // optional demo styles
   .top-bar {
-    background: transparent;
+    background-color: $primary-color;
 
     .menu {
       background: transparent;
@@ -51,7 +52,12 @@ $hero-full-screen-text-color: $white;
       color: $hero-full-screen-text-color;
       font-weight: bold;
     }
+    @include breakpoint(small only) {
+        display: none;
+    }
   }
 }
 
-
+.middle-content-section img {
+  margin-bottom: 5%;
+}
