@@ -28,7 +28,7 @@ brew install babel
 
 To pull project:
 ```
-git clone https://github.com/KetchPartners/ketchpartnersweb.git
+git clone https://github.com/KetchPartners/ketchpartnerswebsite.git
 cd ketchpartnersweb
 git branch [come up with name branch]
 git checkout [come up with name branch]
