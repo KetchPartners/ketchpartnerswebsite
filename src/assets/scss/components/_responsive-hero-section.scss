@@ -3,7 +3,7 @@ $hero-height: 60vh;
 .hero-section {
   background: url('../img/sailing-team-about.jpg') 50% no-repeat;
   background-size: cover;
-  height: $hero-height;
+    height: auto;
   text-align: center;
   display: flex;
   align-items: center;
@@ -54,6 +54,20 @@ $hero-height: 60vh;
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+  }
+}
+
+.hero-section5 {
+  background: url('../img/main-page-background.jpg') 100% no-repeat;
+  background-size: cover;
+  height: auto;
+  text-align: center;
+//  display: flex;
   justify-content: center;
   color: $white;
 
