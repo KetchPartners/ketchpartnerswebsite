@@ -4,6 +4,7 @@ $hero-full-screen-text-color: $white;
 
 .hero-full-screen {
   height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,3 +62,4 @@ $hero-full-screen-text-color: $white;
 .middle-content-section img {
   margin-bottom: 5%;
 }
+
