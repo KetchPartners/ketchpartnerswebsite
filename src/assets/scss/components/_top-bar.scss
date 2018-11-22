@@ -1,0 +1,25 @@
+.top-bar {
+    background: rgb(10,116,138);
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $white;
+    }
+
+    .top-bar-right {
+      background: $primary-color;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $white;
+      font-weight: bold;
+    }
+  }
