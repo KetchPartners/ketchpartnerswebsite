@@ -12,36 +12,33 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
-  <nav data-sticky-container>
-    <div data-sticky data-options="marginTop:0;">
+  <nav>
+   
 
-      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar" data-responsive-toggle="top-bar-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="top-bar-menu"></button>
         <div class="title-bar-title">Menu</div>
       </div>
-      <div class="top-bar">
-      <div class="top-bar-left" id="ketch-logo">
-        <ul class="no-bullet">
-         <li><a href="#"><img src="{{root}}assets/img/logo-top-bar.png" alt="Ketch Partners Logo" /></a></li>
-       </ul>
-      </div>
-      <div class="top-bar-right">
-         <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
-          <li><a href="{{root}}index.html">Home</a></li>
-          <li><a href="{{root}}about.html">About Us</a></li>
-          <li><a href="{{root}}services.html">Services</a></li>
-          <li><a href="{{root}}industries.html">Industries</a></li>
-          <li><a href="{{root}}testimonials.html">Testimonials</a></li>
-          <li><a href="{{root}}contact.html">Contact</a></li>
+      
+      <div class="top-bar" id="top-bar-menu">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text"><img src="{{root}}assets/img/logo-top-bar.png" alt="logo"></li>
 
-        </ul>
-
-
-
+          </ul>
+        </div>
+        <div class="top-bar-right primary">
+          <ul class="menu">
+          <li><a href="{{root}}about.html"><button class="button">About</button></a></li>
+          <li><a href="{{root}}about.html"><button class="button">Services</button></a></li>
+          <li><a href="{{root}}about.html"><button class="button">Industries</button></a></li>
+          <li><a href="{{root}}about.html"><button class="button">Testimonials</button></a></li>
+          <li><a href="{{root}}about.html"><button class="button">Contact Us</button></a></li>
+          </ul>
+        </div>
       </div>
-      </div>
-      </div>
-  </nav>
+  </nav>    
+  
 
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
