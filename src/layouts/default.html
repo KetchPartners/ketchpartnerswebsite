@@ -10,6 +10,7 @@
     
     <title>Ketch Partners</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
 <body>
   <nav>
@@ -43,22 +44,56 @@
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
 
-
-<footer class="ecommerce-footer">
-
-  <div class="ecommerce-footer-bottom-bar row">
-    <div class="small-12 medium-5 columns">
-      <ul class="bottom-links">
-        <li><a href="{{root}}privacy.html">Privacy Policy</a></li>
-        <li><a href="{{root}}terms.html">Terms &amp; Conditions</a></li>
+<footer class="marketing-site-footer">
+  <div class="row medium-unstack">
+    <div class="medium-4 columns">
+      <h4 class="marketing-site-footer-name">Ketch Partners</h4>
+      <p>Full Service SAP Project Consulting Services</p>
+      <ul class="menu marketing-site-footer-menu-social simple">
+        <li><a href="#"><i class="fab fa-youtube-square" aria-hidden="true"></i></a></li>
+         <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+         <li><a href="#"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-    <div class="small-12 medium-2 columns ecommerce-footer-logomark">
-      <a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar.png"/></a>
+    <div class="medium-4 columns">
+       <h4 class="marketing-site-footer-title">Contact Info</h4>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-map-marker" aria-hidden="true"></i>
+        <p>1075 Peachtree Street NE Suite 3650<br>Atlanta, GA 30309</p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <p>1 (404) 996-0245</p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-envelope-open" aria-hidden="true"></i>
+        <p><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
+      </div>
     </div>
-    <div class="small-12 medium-5 columns">
-      <div class="bottom-copyright">
-        <span>©2018 Ketch Partners. All rights reserved.</span>
+    <div class="medium-4 columns">
+    
+      <div class="row small-up-2">
+        <div class="column column-block">
+          <img src="{{root}}assets/img/logo-footer.png" alt="Ketch Logo" />
+        </div>
+        <div class="column column-block">
+          <img src="{{root}}assets/img/ketchimages/Partner-SAP-footer.png" alt="SAP Partner Logo" />
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  <div class="marketing-site-footer-bottom">
+    <div class="row large-unstack align-middle">
+
+      <div class="column">
+        <ul class="menu marketing-site-footer-bottom-links">
+          <li><a href="{{root}}index.html">Home</a></li>
+          <li><a href="{{root}}privacy.html">Privacy</a></li>
+          <li><a href="{{root}}terms.html">Terms of Use</a></li>
+          <li><a href="{{root}}index.html">&copy; 2018 Ketch Partners</a></li>
+
+        </ul>
       </div>
     </div>
   </div>
