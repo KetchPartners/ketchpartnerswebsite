@@ -1,12 +1,13 @@
-$marketing-site-footer-bg: $background;
+$marketing-site-footer-bg: scale-color($secondary-color, $lightness: 80%);
 
 .marketing-site-footer {
-  background: $background;
-  color: lighten($marketing-site-footer-bg, 40%);
+  background: scale-color($secondary-color, $lightness: 80%);
+  color: $primary-color;
   padding: 2rem 0 0;
 
   .marketing-site-footer-menu-social a {
-    color: $white;
+    color: $primary-color;
+    font-size: 2rem;
   }
 
   .column-block {
@@ -25,13 +26,13 @@ $marketing-site-footer-bg: $background;
 }
 
 .marketing-site-footer-name {
-  color: $white;
+  color: $primary-color;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .marketing-site-footer-title {
-  color: $white;
+  color: $primary-color;
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
@@ -42,8 +43,8 @@ $marketing-site-footer-bg: $background;
 
   .fa {
     font-size: 2rem;
-    color: darken($marketing-site-footer-bg, 20%);
-  }
+    color: $primary-color;
+    }
 
   p {
     margin-left: 1rem;
@@ -65,7 +66,7 @@ $marketing-site-footer-bg: $background;
     justify-content: flex-end;
 
     a {
-      color: lighten($marketing-site-footer-bg, 40%);
+      color: lighten($primary-color, 10%);
     }
 
     @include breakpoint(medium down) {
@@ -80,6 +81,6 @@ $marketing-site-footer-bg: $background;
 
 
 .marketing-site-footer-block a {
-  color: lighten($marketing-site-footer-bg, 40%);
+  color: $primary-color;
 }
 

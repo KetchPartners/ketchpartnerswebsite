@@ -1,16 +1,17 @@
 .top-bar {
-    background: rgb(10,116,138);
+    background: scale-color($secondary-color, $lightness: 80%);
 
     .menu {
       background: transparent;
     }
 
     .menu-text {
-      color: $white;
+      color: $primary-color;
     }
 
     .top-bar-right {
-      background: $primary-color;
+      background: transparent;
+     
     }
 
     .menu li {
@@ -19,7 +20,7 @@
     }
 
     .menu a {
-      color: $white;
+      color: $primary-color;
       font-weight: bold;
     }
   }
