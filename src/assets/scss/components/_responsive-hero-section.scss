@@ -63,15 +63,19 @@ $hero-height: 60vh;
 }
 
 .hero-section5 {
-  background: url('../img/main-page-background.jpg') 100% no-repeat;
+  background: url('../img/hero-main-image.jpg') 50% no-repeat;
   background-size: cover;
-  height: auto;
+  height: $hero-height;
   text-align: center;
-//  display: flex;
+  display: flex;
+  align-items: center;
   justify-content: center;
   color: $white;
 
   .hero-section-text {
     color: $white;
+    ul {
+      font-size: 2rem;
+    }
   }
 }
