@@ -63,8 +63,9 @@ $hero-height: 60vh;
 }
 
 .hero-section5 {
-  background: url('../img/hero-main-image.jpg') 50% no-repeat;
+  background: url('../img/hero-main-image.jpg') 100% no-repeat;
   background-size: cover;
+  min-height: 80vh;
   height: $hero-height;
   text-align: center;
   display: flex;
