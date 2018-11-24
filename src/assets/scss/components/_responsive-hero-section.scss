@@ -3,7 +3,7 @@ $hero-height: 60vh;
 .hero-section {
   background: url('../img/sailing-team-about.jpg') 50% no-repeat;
   background-size: cover;
-    height: auto;
+  min-height: 30vh;
   text-align: center;
   display: flex;
   align-items: center;
