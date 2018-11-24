@@ -1,0 +1,49 @@
+$work-feature-image-offset-padding: 10px 0;
+
+.work-feature-block {
+  background-color: scale-color($secondary-color, $lightness: 80%);
+  padding: 10px 0;
+  border-top: 1px solid $medium-gray;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.work-feature-block-image {
+  display: block;
+  margin: auto;
+  padding: $work-feature-image-offset-padding;
+}
+
+
+.work-feature-block2 {
+  background-color: scale-color($primary-color, $lightness: 80%);
+  padding: 10px 0;
+  border-top: 1px solid $medium-gray;
+  border-bottom: 1px solid $medium-gray;
+  width: 100%;
+
+
+  @include breakpoint(large) {
+   h2 {
+     margin-top: 30px;
+     width: 75%;
+  }
+  h3 {
+     width: 75%;
+  }
+  p {
+     width: 75%;
+  }
+}
+}
+
+.work-feature-block2-image {
+  display: block;
+  margin: auto;
+  padding: $work-feature-image-offset-padding;
+}
+
+
+.work-feature-content {
+	width: 70%;
+
+}
