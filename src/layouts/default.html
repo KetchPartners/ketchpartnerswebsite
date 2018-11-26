@@ -46,12 +46,60 @@
           <li><a href="{{root}}services.html">Services</a></li>
           <li><a href="{{root}}industries.html">Industries</a></li>
           <li><a href="{{root}}testimonials.html">Testimonials</a></li>
-          <li><a href="{{root}}contact.html">Contact Us</a></li>
+          <li><button class="button" data-open="contact-form">Contact Us</button></li>
           </ul>
         </div>
       </div>
   </nav>    
-  
+
+
+<!-- This is the first modal -->
+<div class="reveal" id="contact-form" data-reveal>
+  <h1>Contact Us</h1>
+  <p class="lead">We’d Love to Hear From You, Get In Touch With Us!</p>
+  <p>Ketch</p>
+  <p>1075 Peachtree Street NE, Suite 3650</p>
+  <p>Atlanta, GA 30309 USA</p>
+  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
+  <p><i class="fas fa-phone" aria-hidden="true"></i>404-996-0238</p>
+   <p><i class="fas fa-fax" aria-hidden="true"></i>404-996-0243</p>
+   <h2>Request Information</h2>
+
+  <button class="button" data-open="contact-form-success">Contact Us Online</button>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- This is the nested modal -->
+<div class="reveal" id="contact-form-success" data-reveal>
+  <h2>Contact Us</h2>
+  <form class="callout text-center">
+  <h2>Become A Member</h2>
+  <div class="floated-label-wrapper">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" name="full name input" placeholder="Full name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email input" placeholder="Email">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password input" placeholder="Password">
+  </div>
+  <input class="button expanded" type="submit" value="Sign up">
+</form>
+
+
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+
 <div class="body-background">
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
