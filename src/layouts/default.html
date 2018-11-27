@@ -21,6 +21,31 @@
 
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    
+<!--GDPR Cookie Compliance - attribution goes to https://cookieconsent.insites.com/-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#18306e",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#fdad14",
+          "text": "#18306e"
+        }
+      },
+      "content": {
+        "message": "This website uses Google Analytics Cookies In Order to Improve Your Web Experience.",
+        "dismiss": "Agree?",
+        "link": "https://ketch.partners",
+        "href": "https://ketch.partners/cookie-policy.html"
+      }
+    })});
+    </script>
   </head>
 <body>
   <nav>
@@ -152,6 +177,7 @@
           <li><a href="{{root}}index.html">Home</a></li>
           <li><a href="{{root}}privacy.html">Privacy</a></li>
           <li><a href="{{root}}terms.html">Terms of Use</a></li>
+          <li><a href="{{root}}cookie-policy.html">Cookie Policy</a></li>
           <li><a href="{{root}}index.html">&copy; 2018 Ketch Partners</a></li>
 
         </ul>
