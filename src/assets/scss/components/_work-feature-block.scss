@@ -5,6 +5,18 @@ $work-feature-image-offset-padding: 10px 0;
   padding: 10px 0;
   border-top: 1px solid $medium-gray;
   border-bottom: 1px solid $medium-gray;
+    @include breakpoint(large) {
+   h2 {
+     margin-top: 30px;
+     width: 85%;
+  }
+  h3 {
+     width: 85%;
+  }
+  p {
+     width: 85%;
+  }
+}
 }
 
 .work-feature-block-image {
@@ -25,13 +37,13 @@ $work-feature-image-offset-padding: 10px 0;
   @include breakpoint(large) {
    h2 {
      margin-top: 30px;
-     width: 75%;
+     width: 85%;
   }
   h3 {
-     width: 75%;
+     width: 85%;
   }
   p {
-     width: 75%;
+     width: 85%;
   }
 }
 }
