@@ -6,60 +6,182 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ketch Partners</title>
+    <link rel="shortcut icon" href="{{root}}assets/img/favicons/favicon.ico">
+    
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="og:title" property="og:title" content="{{title}}">
+    <meta name="robots" content="{{robots}}">
+    <link href="{{canonical}}" rel="canonical">
+    <meta property="og:title" content="Your Title Here" />
+    <meta property="og:type" content="{{type}}" />
+    <meta property="og:url" content="{{canonical}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:site_name" content="Ketch Partners" />
+
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    
+<!--GDPR Cookie Compliance - attribution goes to https://cookieconsent.insites.com/-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#18306e",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#fdad14",
+          "text": "#18306e"
+        }
+      },
+      "content": {
+        "message": "This website uses Google Analytics Cookies In Order to Improve Your Web Experience.",
+        "dismiss": "Agree?",
+        "link": "https://ketch.partners",
+        "href": "https://ketch.partners/cookie-policy.html"
+      }
+    })});
+    </script>
   </head>
 <body>
-  <nav data-sticky-container>
-    <div data-sticky data-options="marginTop:0;">
+  <nav class="top-bar-full">
+   
+    <div class="grid-container">
+      <div class="title-bar" data-responsive-toggle="top-bar-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="top-bar-menu"></button>
+        <div class="title-bar-title"></div>
+        <a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar-small.png" width="70%" alt="logo"></a>
+      </div>
+      
+      <div class="top-bar" id="top-bar-menu">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text hide-for-small-only"><a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo"></a></li>
 
-      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-      <div class="top-bar">
-      <div class="top-bar-left" id="ketch-logo">
-        <ul class="no-bullet">
-         <li><a href="#"><img src="{{root}}assets/img/logo-top-bar.png" alt="Ketch Partners Logo" /></a></li>
-       </ul>
-      </div>
-      <div class="top-bar-right">
-         <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
           <li><a href="{{root}}index.html">Home</a></li>
-          <li><a href="{{root}}about.html">About Us</a></li>
+          <li><a href="{{root}}about.html">About</a></li>
           <li><a href="{{root}}services.html">Services</a></li>
           <li><a href="{{root}}industries.html">Industries</a></li>
           <li><a href="{{root}}testimonials.html">Testimonials</a></li>
-          <li><a href="{{root}}contact.html">Contact</a></li>
-
-        </ul>
-
-
-
+          <li><button class="button" data-open="contact-form">Contact Us</button></li>
+          </ul>
+        </div>
       </div>
-      </div>
-      </div>
-  </nav>
-  <main>
+    </div>
+  </nav>    
+
+
+<!-- This is the first modal -->
+<div class="reveal" id="contact-form" data-reveal>
+  <h1>Contact Us</h1>
+  <p class="lead">We’d Love to Hear From You, Get In Touch With Us!</p>
+  <p>Ketch</p>
+  <p>1075 Peachtree Street NE, Suite 3650</p>
+  <p>Atlanta, GA 30309 USA</p>
+  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
+  <p><i class="fas fa-phone" aria-hidden="true"></i>404-996-0238</p>
+   <p><i class="fas fa-fax" aria-hidden="true"></i>404-996-0243</p>
+   <h2>Request Information</h2>
+
+  <button class="button" data-open="contact-form-success">Contact Us Online</button>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- This is the nested modal -->
+<div class="reveal" id="contact-form-success" data-reveal>
+  <h2>Contact Us</h2>
+  <form class="callout text-center">
+  <h2>Become A Member</h2>
+  <div class="floated-label-wrapper">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" name="full name input" placeholder="Full name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email input" placeholder="Email">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password input" placeholder="Password">
+  </div>
+  <input class="button expanded" type="submit" value="Sign up">
+</form>
+
+
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+
+<div class="body-background">
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 {{> body}}
-</main>
+</div>
 
-<footer class="ecommerce-footer">
-
-  <div class="ecommerce-footer-bottom-bar row">
-    <div class="small-12 medium-5 columns">
-      <ul class="bottom-links">
-        <li><a href="{{root}}privacy.html">Privacy Policy</a></li>
-        <li><a href="{{root}}terms.html">Terms &amp; Conditions</a></li>
+<footer class="marketing-site-footer">
+  <div class="row medium-unstack">
+    <div class="medium-4 columns">
+      <h4 class="marketing-site-footer-name">Ketch Partners</h4>
+      <p>Full Service SAP Project Consulting Services</p>
+      <ul class="menu marketing-site-footer-menu-social simple">
+        <li><a href="https://www.youtube.com/channel/UCm5iewk4-UwL1FiG8dDiSgw" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i></a></li>
+         <li><a href="https://www.linkedin.com/company/intenxus-llc" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+         <li><a href="https://github.com/KetchPartners" target="_blank"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-    <div class="small-12 medium-2 columns ecommerce-footer-logomark">
-      <a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar.png"/></a>
+    <div class="medium-4 columns">
+       <h4 class="marketing-site-footer-title">Contact Info</h4>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-map-marker" aria-hidden="true"></i>
+        <p>1075 Peachtree Street NE Suite 3650<br>Atlanta, GA 30309</p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <p>1 (404) 996-0245</p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <i class="fas fa-envelope-open" aria-hidden="true"></i>
+        <p><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
+      </div>
     </div>
-    <div class="small-12 medium-5 columns">
-      <div class="bottom-copyright">
-        <span>©2018 Ketch Partners. All rights reserved.</span>
+    <div class="medium-4 columns">
+    
+      <div class="row small-up-2">
+        <div class="column column-block">
+          <a hrc="{{root}}index.html"><img src="{{root}}assets/img/logo-footer.png" alt="Ketch Logo" /></a>
+        </div>
+        <div class="column column-block">
+          <img src="{{root}}assets/img/ketchimages/Partner-SAP-footer.png" alt="SAP Partner Logo" />
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  <div class="marketing-site-footer-bottom">
+    <div class="row large-unstack align-middle">
+
+      <div class="column">
+        <ul class="menu marketing-site-footer-bottom-links">
+          <li><a href="{{root}}index.html">Home</a></li>
+          <li><a href="{{root}}privacy.html">Privacy</a></li>
+          <li><a href="{{root}}terms.html">Terms of Use</a></li>
+          <li><a href="{{root}}cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="{{root}}index.html">&copy; 2018 Ketch Partners</a></li>
+
+        </ul>
       </div>
     </div>
   </div>

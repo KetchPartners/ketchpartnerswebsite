@@ -3,7 +3,7 @@ $hero-height: 60vh;
 .hero-section {
   background: url('../img/sailing-team-about.jpg') 50% no-repeat;
   background-size: cover;
-  height: $hero-height;
+  min-height: 30vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -16,3 +16,85 @@ $hero-height: 60vh;
   }
 }
 
+
+.hero-section2 {
+  background: url('../img/testimonial-stars.jpg') 50% no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  color: $primary-color;
+
+  .hero-section-text {
+    color: $primary-color;
+  }
+}
+
+
+.hero-section3 {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+  }
+}
+
+
+.hero-section4 {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+  }
+}
+
+.hero-section5 {
+  background: url('../img/hero-main-image.jpg') 100% no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .hero-section-text {
+    color: $white;
+    ul {
+      font-size: 2rem;
+    }
+  }
+}
+
+
+.hero-section-main {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: block;
+  padding: 7rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 20px;
+
+  .cell {
+    margin-bottom: 3rem;
+  }
+}

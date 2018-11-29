@@ -16,7 +16,7 @@
       width: 100%;
     }
 
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 64em) {
       flex: 1 0 50%;
     }
   }
@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 64em) {
       flex: 1 0 50%;
       padding: 2rem;
     }
@@ -39,10 +39,11 @@
 }
 
 .marketing-site-content-section-block-header {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .marketing-site-content-section-block-subheader {
-  font-size: 13px;
+  font-size: 24px;
+  color: $primary-color;
 }
 

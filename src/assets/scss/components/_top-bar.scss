@@ -1,0 +1,30 @@
+.top-bar {
+    background: scale-color($secondary-color, $lightness: 80%);
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $primary-color;
+    }
+
+    .top-bar-right {
+      background: transparent;
+     
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  .top-bar-full {
+    background: scale-color($secondary-color, $lightness: 80%);
+  }

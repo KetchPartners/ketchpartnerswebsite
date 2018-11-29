@@ -1,0 +1,19 @@
+.embed-video-section {
+	background-color: scale-color($secondary-color, $lightness: 20%);
+}
+
+.transparent-background {
+	background-color: transparent;
+
+
+	h2 {
+	background-color: $primary-color;
+	color: $white;
+
+	ul {
+	background-color: $white;
+}
+}
+}
+
+
