@@ -1,9 +1,11 @@
 $clean-hero-slider-accent: $warning-color;
 
 .clean-hero-slider {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
   .orbit-caption {
     width: auto;
-    height: auto;
     background: $black;
     position: absolute;
     text-align: center;
@@ -114,3 +116,5 @@ $clean-hero-slider-accent: $warning-color;
     max-height: none !important;
   }
 }
+
+
