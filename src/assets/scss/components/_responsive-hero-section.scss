@@ -80,3 +80,21 @@ $hero-height: 60vh;
     }
   }
 }
+
+
+.hero-section-main {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: block;
+  padding: 7rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 20px;
+
+  .cell {
+    margin-bottom: 3rem;
+  }
+}

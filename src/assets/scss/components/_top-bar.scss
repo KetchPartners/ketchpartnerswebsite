@@ -24,3 +24,7 @@
       font-weight: bold;
     }
   }
+
+  .top-bar-full {
+    background: scale-color($secondary-color, $lightness: 80%);
+  }
