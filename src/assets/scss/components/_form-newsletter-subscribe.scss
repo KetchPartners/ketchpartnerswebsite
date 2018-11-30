@@ -98,3 +98,9 @@ $social-brand-facebook: #3b5998;
   }
 }
 
+.newsletter-subscribe {
+  background-color: scale-color($primary-color, $lightness: 80%);
+  border-radius: 20px;
+  border: 1px solid $medium-gray;
+}
+
