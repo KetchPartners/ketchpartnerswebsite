@@ -90,7 +90,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 20px;
+$global-radius: 10px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -890,6 +890,16 @@ grid-container.services-page {
 
 nav.top-bar-full {
   margin-bottom: 1rem;
+}
+
+#services-header {
+  margin: 2rem 3rem 5rem 3rem;
+  padding: 0 3rem 0 3rem;
+  background: rgba(255,255,255, 0.8);
+}
+
+#services-nav {
+  padding: 3rem 0 3rem 0;
 }
 
 
