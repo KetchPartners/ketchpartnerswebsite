@@ -51,6 +51,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// Custom Mixins
+
+@import 'components/mixins';
+
+
 // Building Blocks
 @import 'components/clean-hero-slider';
 @import 'components/responsive-hero-section';
@@ -60,7 +65,7 @@
 @import 'components/image-content-alternating';
 @import 'components/block_quote_full_width';
 @import 'components/main-page-hero-content';
-// @import 'components/hero-main-short';
+@import 'components/flip-card';
 @import 'components/embed-video-section';
 @import 'components/work-feature-block';
 @import 'components/top-bar';
