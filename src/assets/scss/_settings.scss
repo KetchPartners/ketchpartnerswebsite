@@ -882,6 +882,7 @@ $xy-block-grid-max: 8;
 
 .grid-container.section-container {
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 grid-container.services-page {
@@ -898,8 +899,25 @@ nav.top-bar-full {
   background: rgba(255,255,255, 0.8);
 }
 
+#services-header-block {
+  background-color: $secondary-color;
+}
+
+#services-header-headline {
+  background-color: $primary-color;
+}
+
 #services-nav {
   padding: 3rem 0 3rem 0;
+}
+
+#services-projects-header, #services-advisory-header, #services-development-header, #services-support-header {
+  background-color: $primary-color;
+  padding-bottom: 1rem;
+}
+
+#services-projects-block, #services-advisory-block, #services-development-block, #services-support-block {
+  background-color: $secondary-color;
 }
 
 #latest-news {
@@ -907,5 +925,56 @@ nav.top-bar-full {
   color: $white;
   border-radius: $global-radius;
   margin-bottom: 1.5rem;
+}
+
+#about-description-block {
+  background: $primary-color;
+}
+
+#about-description-text {
+  background: transparent;
+  color: $white;
+  border-radius: $global-radius;
+  margin: 1rem 2rem 1.5rem 2rem;
+}
+
+#about-description-headline {
+  background: $secondary-color;
+  color: $primary-color;
+  padding-bottom: 1rem;
+}
+
+#about-clients-headline {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+#about-clients-block {
+  background-color: $white;
+  border: 1px solid $medium-gray;
+}
+
+#about-partners-headline {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+#about-partners-block {
+  background-color: $white;
+  border: 1px solid $medium-gray;
+}
+
+#about-team-headline {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+#about-team-block {
+  background-color: $primary-color;
+  border: 1px solid $medium-gray;
+}
+
+#industries-1, #industries-2, #industries-3, industries-4, #industries-5, #industries-6, #industries-7, industries-8  {
+  background: scale-color($secondary-color, $lightness: 80%);
 }
 

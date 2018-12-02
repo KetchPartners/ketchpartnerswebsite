@@ -39,6 +39,18 @@ $clean-hero-slider-accent: $warning-color;
       }
     }
 
+    h1 {
+      color: $clean-hero-slider-accent;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+
+      @include breakpoint(medium) {
+        font-size: 3rem;
+        font-weight: normal;
+      }
+      }
+
     h5 {
       color: $clean-hero-slider-accent;
       font-size: 1.5rem;
