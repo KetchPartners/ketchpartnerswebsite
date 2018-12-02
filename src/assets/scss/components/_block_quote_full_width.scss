@@ -25,36 +25,34 @@ $full-width-testimonial-vertical-padding: 2rem;
 }
 .full-width-testimonial-section {
   padding-top: $full-width-testimonial-vertical-padding;
+  margin: 2rem 0 2rem 0;
+  border-radius: $global-radius;
   
   .full-width-testimonial-text {
     font-weight: 300;
     color: #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
-    // Adjust margin-top for line spacing
-    margin-top: -5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     
     @include breakpoint(small) {
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 2rem;
+      padding-right: 2rem;
       font-size: 1.5em;
     }
     
     @include breakpoint(medium) {
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     
     @include breakpoint(large) {
-      padding-left: 180px;
-      padding-right: 180px;
+      padding-left: 2rem;
+      padding-right: 2rem;
       font-size: 1.8em;
     }
     
-    @include breakpoint(xlarge) {
-      padding-left: 300px;
-      padding-right: 300px;
-    }
+
   }
   
   .full-width-testimonial-source {
