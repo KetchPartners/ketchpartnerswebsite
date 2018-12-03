@@ -85,18 +85,14 @@ $hero-height: 60vh;
 .hero-section-main {
   background-color: $primary-color;
   height: auto;
-  text-align: center;
-  display: block;
-  padding: 7rem 3rem 3rem 3rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: $white;
   border: 1px solid $light-gray;
   border-radius: $global-radius;
+  align-content: space-between
 
-  .cell {
-    margin-bottom: 3rem;
-  }
 }
 
 .page-header-section {
