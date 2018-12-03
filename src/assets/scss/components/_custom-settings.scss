@@ -100,3 +100,38 @@ nav.top-bar-full {
 .no-border {
   border: none;
 }
+
+#ketch-video-block {
+
+  background: $primary-color;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  border-radius: $global-radius;
+  margin-bottom: 2rem;
+}
+
+#ketch-video-text {
+  background: transparent;
+  color: $white;
+  padding: 3rem;
+  margin: 2rem 1rem 2rem 1rem;
+  img {
+     display:block;
+     margin: auto auto;
+  }
+  h5 {
+     font-size: 1.5rem;
+  }
+  p {
+     font-size: 1.5rem;
+     color: $secondary-color;
+  }
+
+}
+
+#ketch-video {
+  padding: 3rem;
+}
+
+#subscribe-text {
+  line-height: 1;
+}

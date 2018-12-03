@@ -1,19 +1,30 @@
 
 <div class="sticky" data-sticky data-anchor="newsletter-sticky">
-  <aside class="newsletter-subscribe">
- <div class="card-section">
+  <aside class="newsletter-subscribe" id="aside-newletter">
+ <div class="card-section" id="subscribe-image">
   <div class="form-registration-img">
     <img src="{{root}}assets/img/ketch-mag-300x300-01.png" alt="Ketch Partners Newsletter" />
   </div>
 </div>
-  <div class="card-section">
-    <h4 class="text-center">Free Case Study</h4>
-    <h4 class="text-center">SAP HANA S4 Implementations</h4>
-      <form class="form-registration-group" action="">
+  <div class="card-section" id="subscribe-text">
+    <p class="text-center">Free Case Study</p>
+    <p class="text-center">SAP HANA S4 Implementations</p>
+    <form class="form-registration-group" action="">
     <input class="form-registration-input"  type="email" placeholder="Your email">
     <input class="form-registration-submit-button" type="submit" value="Download">
   </form>
   </div>
+  </aside>
+  <aside class="newsletter-subscribe" id="aside-categories">
+    <div class="card-section">
+      <h5>Categories</h5>
+       <div class="callout no-border">
+
+            <a class="button small" href="{{root}}about.html">About</a>
+            <a class="button small" href="{{root}}industries.html">Industries</a>
+            <a class="button small" href="{{root}}services.html">Services</a>
+        </div>
+    </div>
   </aside>
 </div>
 
