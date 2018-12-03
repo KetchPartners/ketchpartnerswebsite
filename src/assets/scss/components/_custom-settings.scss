@@ -11,6 +11,13 @@ nav.top-bar-full {
   margin-bottom: 1rem;
 }
 
+#about-description-text {
+  padding: 2rem 3rem 2rem 3rem;
+  background: $white;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
 #services-header {
 
   padding: 2rem 3rem 2rem 3rem;
@@ -39,6 +46,7 @@ nav.top-bar-full {
 #services-projects-header, #services-advisory-header, #services-development-header, #services-support-header {
   background-color: $primary-color;
   padding-bottom: 1rem;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
 }
 
 #services-projects-block, #services-advisory-block, #services-development-block, #services-support-block {
@@ -56,52 +64,7 @@ nav.top-bar-full {
   @include box-shadow(5px, 5px, 5px, $light-gray);
 }
 
-#about-description-block {
-  background: $primary-color;
-}
 
-#about-description-text {
-  background: transparent;
-  color: $white;
-  border-radius: $global-radius;
-  margin: 1rem 2rem 1.5rem 2rem;
-}
-
-#about-description-headline {
-  background: $secondary-color;
-  color: $primary-color;
-  padding-bottom: 1rem;
-}
-
-#about-clients-headline {
-  background-color: $secondary-color;
-  color: $primary-color;
-}
-
-#about-clients-block {
-  background-color: $white;
-  border: 1px solid $medium-gray;
-}
-
-#about-partners-headline {
-  background-color: $secondary-color;
-  color: $primary-color;
-}
-
-#about-partners-block {
-  background-color: $white;
-  border: 1px solid $medium-gray;
-}
-
-#about-team-headline {
-  background-color: $secondary-color;
-  color: $primary-color;
-}
-
-#about-team-block {
-  background-color: $primary-color;
-  border: 1px solid $medium-gray;
-}
 
 #industries-1, #industries-2, #industries-3, industries-4, #industries-5, #industries-6, #industries-7, industries-8  {
   background: scale-color($secondary-color, $lightness: 80%);
@@ -127,3 +90,13 @@ nav.top-bar-full {
 }
 
 
+.blockquote-container {
+  border-radius: $global-radius;
+  border: 1px solid $medium-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.no-border {
+  border: none;
+}

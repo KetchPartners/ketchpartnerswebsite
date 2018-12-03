@@ -24,11 +24,13 @@
 
 .marketing-site-features-headline {
   text-align: center;
-  padding-top: .5rem;
+  padding: .5rem 0 1rem 0;
   font-size: 2rem;
-  background-color: transparent;
+  background-color: $primary-color;
   color: $white;
   border-radius: $global-radius;
+  border: 1px solid $medium-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
 }
 
 .marketing-site-features-subheadline {
