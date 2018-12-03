@@ -99,9 +99,10 @@ $social-brand-facebook: #3b5998;
 }
 
 .newsletter-subscribe {
-  background-color: scale-color($primary-color, $lightness: 80%);
-  border-radius: 20px;
+  background-color: $white;
+  border-radius: $global-radius;
   border: 1px solid $medium-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray)
 }
 
 

@@ -2,12 +2,16 @@ $full-width-testimonial-quote-color: $warning-color;
 $full-width-testimonial-vertical-padding: 2rem;
 
 .full-width-testimonial {
-  background-color: $primary-color;
+  background-color: $white;
+    border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
  
 }
 
 .full-width-testimonial2 {
-  background-color: #0C1836;
+  background-color: $light-gray;
+    border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
 }
 
 .full-width-testimonial-icon {
@@ -22,15 +26,17 @@ $full-width-testimonial-vertical-padding: 2rem;
 .full-width-testimonial-content,
 .full-width-testimonial-icon {
   text-align: center;
+
 }
 .full-width-testimonial-section {
   padding-top: $full-width-testimonial-vertical-padding;
   margin: 2rem 0 2rem 0;
   border-radius: $global-radius;
+    border: 1px solid $medium-gray;
   
   .full-width-testimonial-text {
     font-weight: 300;
-    color: #ffffff;
+    color: $black;
     padding-left: 2rem;
     padding-right: 2rem;
 
@@ -58,7 +64,7 @@ $full-width-testimonial-vertical-padding: 2rem;
   .full-width-testimonial-source {
     font-size: 1.2em;
     font-weight: 600;
-    color: #ffffff;
+    color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding-bottom: 0;
@@ -73,7 +79,7 @@ $full-width-testimonial-vertical-padding: 2rem;
     display: block;
     font-size: 0.9em;
     font-weight: 500;
-    color: #ffffff;
+    color: $secondary-color;
     text-transform: uppercase;
     letter-spacing: 1.5px;
   
@@ -96,5 +102,9 @@ $full-width-testimonial-vertical-padding: 2rem;
 
 .full-width-testimonial-content {
   width: 100%;
+}
+
+h5.full-width-testimonial-text {
+  font-size: 0.4rem;
 }
 

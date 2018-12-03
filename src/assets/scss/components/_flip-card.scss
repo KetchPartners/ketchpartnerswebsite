@@ -40,7 +40,7 @@ $flip-card-transition-speed: 0.6s;
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 
   h3 {
@@ -51,7 +51,7 @@ $flip-card-transition-speed: 0.6s;
   }
 
   i {
-    font-size: 5rem;
+    font-size: 3rem;
     color: $primary-color;
 
   }

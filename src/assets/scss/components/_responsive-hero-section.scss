@@ -92,7 +92,7 @@ $hero-height: 60vh;
   margin-bottom: 3rem;
   color: $white;
   border: 1px solid $light-gray;
-  border-radius: 20px;
+  border-radius: $global-radius;
 
   .cell {
     margin-bottom: 3rem;
@@ -109,7 +109,7 @@ $hero-height: 60vh;
   margin-bottom: 2rem;
   color: $white;
   border: 1px solid $light-gray;
-  border-radius: 20px;
+  border-radius: $global-radius;
   align-items: center;
   justify-content: center;
 

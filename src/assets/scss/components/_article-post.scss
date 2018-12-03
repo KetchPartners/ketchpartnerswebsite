@@ -12,7 +12,7 @@ $social-brand-google-plus: #dd4b39;
   border: 1px solid $medium-gray;
   border-radius: $global-radius;
   margin-bottom: 1rem;
-
+@include box-shadow(5px, 5px, 5px, $light-gray);
   .article-date-read {
     color: $dark-gray;
   }
@@ -82,15 +82,20 @@ $social-brand-google-plus: #dd4b39;
 
 .article-post-page {
   margin-top: 3rem;
+
 }
 
 .other-links {
 padding: 1.3rem 4rem 2rem 4rem;
+@include box-shadow(5px, 5px, 5px, $light-gray);
+border: 1px solid $medium-gray;
   
 }
 
 .about-author {
 padding: 1.3rem 4rem 2rem 4rem;
+@include box-shadow(5px, 5px, 5px, $light-gray);
+border: 1px solid $medium-gray;
   
 }
 

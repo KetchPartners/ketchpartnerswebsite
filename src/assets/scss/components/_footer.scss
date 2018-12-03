@@ -1,7 +1,8 @@
-$marketing-site-footer-bg: scale-color($secondary-color, $lightness: 80%);
+$marketing-site-footer-bg: $white;
 
 .marketing-site-footer {
-  background: scale-color($secondary-color, $lightness: 80%);
+  margin-top: 4rem;
+  background: $light-gray;
   color: $primary-color;
   padding: 2rem 0 0;
 
