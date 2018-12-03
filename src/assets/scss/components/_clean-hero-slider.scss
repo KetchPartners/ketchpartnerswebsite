@@ -2,8 +2,9 @@ $clean-hero-slider-accent: $warning-color;
 
 .clean-hero-slider {
   display: block;
-  overflow: hidden;
-  border-radius: 20px;
+  overflow: visible;
+  border-radius: $global-radius;
+  border: 1px solid $light-gray;
   .orbit-caption {
     width: auto;
     background: $black;

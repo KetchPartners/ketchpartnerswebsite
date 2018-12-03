@@ -4,6 +4,9 @@
 @import 'foundation';
 @import 'motion-ui';
 
+// Custom Mixins
+@import 'components/mixins';
+
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -77,3 +80,4 @@
 @import 'components/form-newsletter-subscribe';
 @import 'components/responsive-four-column-block';
 @import 'components/meet-team';
+@import 'components/custom-settings';
