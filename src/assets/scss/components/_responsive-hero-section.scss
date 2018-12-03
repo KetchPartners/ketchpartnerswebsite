@@ -92,7 +92,26 @@ $hero-height: 60vh;
   margin-bottom: 3rem;
   color: $white;
   border: 1px solid $light-gray;
-  border-radius: 20px;
+  border-radius: $global-radius;
+
+  .cell {
+    margin-bottom: 3rem;
+  }
+}
+
+.page-header-section {
+  background-color: $primary-color;
+  height: auto;
+  text-align: center;
+  display: flex;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: $white;
+  border: 1px solid $light-gray;
+  border-radius: $global-radius;
+  align-items: center;
+  justify-content: center;
 
   .cell {
     margin-bottom: 3rem;

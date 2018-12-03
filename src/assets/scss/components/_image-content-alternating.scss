@@ -10,10 +10,11 @@
 
   .marketing-site-content-section-img {
     align-self: center;
-    flex: 1 0 100%;
+    align-items: center;
+    justify-content: center;
 
     img {
-      width: 100%;
+      width: 80%;
     }
 
     @media screen and (min-width: 64em) {
@@ -25,7 +26,7 @@
     padding: 1rem;
     flex: 1 0 100%;
     align-self: stretch;
-    background: $light-gray;
+    background: scale-color($secondary-color, $lightness: 80%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,11 +40,11 @@
 }
 
 .marketing-site-content-section-block-header {
-  font-size: 36px;
+  font-size: 1rem;
 }
 
 .marketing-site-content-section-block-subheader {
-  font-size: 24px;
+  font-size: 1rem;
   color: $primary-color;
 }
 

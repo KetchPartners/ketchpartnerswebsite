@@ -1,0 +1,58 @@
+.marketing-site-features {
+  background: transparent;
+  border-radius: $global-radius;
+  color: $primary-color;
+  text-align: center;
+  padding: 0 0;
+
+  .fa {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+
+  .marketing-site-features-title {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 40em) {
+    text-align: left;
+  }
+}
+
+.marketing-site-features-headline {
+  text-align: center;
+  padding: .5rem 0 1rem 0;
+  font-size: 2rem;
+  background-color: $primary-color;
+  color: $white;
+  border-radius: $global-radius;
+  border: 1px solid $medium-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
+.marketing-site-features-subheadline {
+  margin-bottom: 1.7rem;
+  text-align: center;
+  background-color: transparent;
+  color: $white;
+}
+
+
+.marketing-site-features-header-block {
+  background: transparent;
+  border-radius: $global-radius;
+  margin-bottom: 2rem;
+}
+
+.marketing-site-body {
+  padding: 1rem 0 1rem;
+  background: transparent;
+  border-radius: 0 0 $global-radius $global-radius;
+}
+
+
+
+

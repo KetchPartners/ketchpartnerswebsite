@@ -1,0 +1,102 @@
+.grid-container.section-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+grid-container.services-page {
+  margin-top: 1rem;
+}
+
+nav.top-bar-full {
+  margin-bottom: 1rem;
+}
+
+#about-description-text {
+  padding: 2rem 3rem 2rem 3rem;
+  background: $white;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
+#services-header {
+
+  padding: 2rem 3rem 2rem 3rem;
+  background: $white;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
+#services-header-block {
+
+  margin: 0;
+  background: $white;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+
+}
+
+#services-header-headline {
+  background-color: $primary-color;
+}
+
+#services-nav {
+  padding: 3rem 0 3rem 0;
+}
+
+#services-projects-header, #services-advisory-header, #services-development-header, #services-support-header {
+  background-color: $primary-color;
+  padding-bottom: 1rem;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
+#services-projects-block, #services-advisory-block, #services-development-block, #services-support-block {
+  background-color: $white;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  border: 1px solid $medium-gray;
+}
+
+#latest-news {
+  background: $primary-color;
+  color: $white;
+  border-radius: $global-radius;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0 1rem 0;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+}
+
+
+
+#industries-1, #industries-2, #industries-3, industries-4, #industries-5, #industries-6, #industries-7, industries-8  {
+  background: scale-color($secondary-color, $lightness: 80%);
+}
+
+.industry-card {
+  background-color: $white;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  border: 1px solid $medium-gray;
+
+}
+
+.industry-card h2 {
+  font-size: 1.3rem;
+  font-style: bold;
+}
+
+.primary-header {
+  background-color: $primary-color;
+  color: $white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.blockquote-container {
+  border-radius: $global-radius;
+  border: 1px solid $medium-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.no-border {
+  border: none;
+}
