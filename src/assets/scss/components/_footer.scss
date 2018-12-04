@@ -85,3 +85,29 @@ $marketing-site-footer-bg: $white;
   color: $primary-color;
 }
 
+
+
+h4.marketing-site-footer-name {
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+#footer-slogan {
+  @include breakpoint(small only) {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+#footer-contact {
+@include breakpoint(small only) {
+  align-items: center;
+}
+}
+
+
+
+
+
+
