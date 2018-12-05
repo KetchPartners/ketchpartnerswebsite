@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+<!--remove for production-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     
 <!--GDPR Cookie Compliance - attribution goes to https://cookieconsent.insites.com/-->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -159,14 +164,14 @@
   <div class="row medium-unstack">
     <div class="medium-4 columns">
       <h4 class="marketing-site-footer-name">Ketch Partners</h4>
-      <p>Full Service SAP Project Consulting Services</p>
-      <ul class="menu marketing-site-footer-menu-social simple">
+      <p id="footer-slogan">Full Service SAP Project Consulting Services</p>
+      <ul class="menu marketing-site-footer-menu-social simple" id="footer-social">
         <li><a href="https://www.youtube.com/channel/UCm5iewk4-UwL1FiG8dDiSgw" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i></a></li>
          <li><a href="https://www.linkedin.com/company/intenxus-llc" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
          <li><a href="https://github.com/KetchPartners" target="_blank"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-    <div class="medium-4 columns">
+    <div class="medium-4 columns" id="footer-contact">
        <h4 class="marketing-site-footer-title">Contact Info</h4>
       <div class="marketing-site-footer-block">
         <i class="fas fa-map-marker" aria-hidden="true"></i>

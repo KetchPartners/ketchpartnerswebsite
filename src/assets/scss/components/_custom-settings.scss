@@ -136,10 +136,7 @@ nav.top-bar-full {
   line-height: 1;
 }
 
-.tag-group {
-  @include breakpoint(medium only) {
-    margin-left:0;
-    padding-left:0;
-  }
-  
+.tags {
+  justify-content: center;
 }
+  
