@@ -100,14 +100,23 @@ h4.marketing-site-footer-name {
   }
 }
 
-#footer-contact {
+
+
+
+
+#footer-social {
+
 @include breakpoint(small only) {
-  align-items: center;
+   display:table; margin:0 auto;
+   li {
+      display:table-cell; padding: 0px 10px;
+   }
 }
 }
 
-
-
-
-
+#footer-contact {
+  @include breakpoint(small only) {
+    margin-left: 4rem;
+  }
+}
 
