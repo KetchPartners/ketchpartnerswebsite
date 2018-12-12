@@ -108,7 +108,11 @@ $('#subscribeSubmit').on("click", function( event ) {
             break;
 
           case 'storage/unknown':
-            alert("Download is not available at this time, please try again later")
+            alert("Download is not available at this time, please try again later");
+            break;
+
+          default:
+            alert("Error");
             break;
         }
       });
