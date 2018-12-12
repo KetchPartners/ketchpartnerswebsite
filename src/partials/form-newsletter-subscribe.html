@@ -1,20 +1,46 @@
 
+
+
 <div class="sticky" data-sticky data-anchor="newsletter-sticky">
-  <aside class="newsletter-subscribe">
- <div class="card-section">
+  <aside class="newsletter-subscribe" id="aside-newletter">
+ <div class="card-section" id="subscribe-image">
   <div class="form-registration-img">
     <img src="{{root}}assets/img/ketch-mag-300x300-01.png" alt="Ketch Partners Newsletter" />
   </div>
 </div>
-  <div class="card-section">
-    <h4 class="text-center">Free Case Study</h4>
-    <h4 class="text-center">SAP HANA S4 Implementations</h4>
-      <form class="form-registration-group" action="">
-    <input class="form-registration-input"  type="email" placeholder="Your email">
-    <input class="form-registration-submit-button" type="submit" value="Download">
+  <div class="card-section" id="subscribe-text">
+    <p class="text-center">Free Case Study</p>
+    <p class="text-center">SAP HANA S4 Implementations</p>
+    <form class="form-registration-group" action="" id="subscribeForm">
+    <input class="form-registration-input" type="email" placeholder="Your email" required id="subscribeEmail">
+    <input class="form-registration-submit-button" type="submit" value="Subscribe" id="subscribeSubmit">
+
   </form>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
   </div>
   </aside>
+<!--  <aside class="newsletter-subscribe" id="aside-categories">
+    <div class="card-section">
+      <h5>Tags</h5>
+       <div class="callout no-border">
+          <div class="button-group tags">
+            <a class="button secondary" href="{{root}}about.html">CFIN</a>
+            <a class="button primary" href="{{root}}industries.html">EPPM</a>
+            <a class="button secondary" href="{{root}}services.html">HANA S4</a>
+          </div>
+       </div>
+    </div>
+  </aside>-->
 </div>
 
-
+<div class="reveal" id="downloadModal" data-reveal>
+ <p class="text-center">Thank you for registering with Ketch Partners.</p>
+ <p class="text-center"><a class="button primary" id="downloadLink" target="_blank">Download Report Link</a></p>
+   <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
