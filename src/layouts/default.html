@@ -127,22 +127,25 @@
 <!-- This is the nested modal -->
 <div class="reveal" id="contact-form-question" data-reveal>
 
-  <form class="callout no-border text-center">
+  <form class="callout secondary text-center" id="questionForm" method="post">
   <h2>Submit Question for Information</h2>
   <div class="floated-label-wrapper">
     <label for="full-name">Full name</label>
-    <input type="text" id="full-name" name="full name input" placeholder="Full name">
+    <input type="text" id="questionName" name="full name input" placeholder="Full name">
   </div>
   <div class="floated-label-wrapper">
     <label for="email">Email</label>
-    <input type="email" id="email" name="email input" placeholder="Email" required pattern="email">
+    <input type="email" id="questionEmail" name="email input" placeholder="Email">
   </div>
   <div class="floated-label-wrapper">
     <label for="question">Question</label>
-    <input type="text" id="question" name="question input" placeholder="Question?" required pattern="text">
+    <input type="text" id="questionMessage" name="question input" placeholder="Question?">
   </div>
-  <input class="button expanded" type="submit" value="Submit">
+  <input class="button expanded" id="questionSubmit" type="submit" value="Submit">
+  <div class="callout success hide" id="questionSuccess">Thank You For Your Inquiry, We Will Get Back To You Shortly.</div>
 </form>
+
+
 
 
   <button class="close-button" data-close aria-label="Close reveal" type="button">
@@ -154,7 +157,7 @@
 
 
 <div class="body-background">
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
 {{> body}}
 </div>
 
@@ -213,7 +216,12 @@
   </div>
 </footer>
 
-<script src="{{root}}assets/js/app.js?version=0.3"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+<script src="{{root}}assets/js/app.js?"></script>
 <script id="dsq-count-scr" src="//ketch-partners.disqus.com/count.js" async></script>
+
 </body>
 </html>
