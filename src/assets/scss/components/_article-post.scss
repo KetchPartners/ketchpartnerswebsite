@@ -8,11 +8,13 @@ $social-brand-google-plus: #dd4b39;
 
 .simple-article-header {
   background: $white;
+  @include breakpoint(medium) {
   padding: 1.3rem 4rem 2rem 4rem;
-  border: 1px solid $medium-gray;
+  }
+  border: none;
   border-radius: $global-radius;
   margin-bottom: 1rem;
-@include box-shadow(5px, 5px, 5px, $light-gray);
+// @include box-shadow(5px, 5px, 5px, $light-gray);
   .article-date-read {
     color: $dark-gray;
   }
@@ -21,11 +23,11 @@ $social-brand-google-plus: #dd4b39;
     text-transform: $article-title-case;
 
     a {
-      color: $black;
+      color: $primary-color;
 
       &:hover,
       &:focus {
-        color: $primary-color;
+        color: $dark-gray;
       }
     }
   }
@@ -93,11 +95,25 @@ border: 1px solid $medium-gray;
 }
 
 .about-author {
-padding: 1.3rem 4rem 2rem 4rem;
+
 @include box-shadow(5px, 5px, 5px, $light-gray);
 border: 1px solid $medium-gray;
+  @include breakpoint(medium) {
+    padding: 1.3rem 4rem 2rem 4rem;
+  }
   
 }
 
 
+h1.article-title {
+  font-size: 2rem;
+  @include breakpoint(small only) {
+    font-size: 1.2rem;
+  }
+}
 
+.article-post-content {
+  @include breakpoint(small only) {
+     padding: 1rem;
+  }
+}

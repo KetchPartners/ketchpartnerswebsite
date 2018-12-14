@@ -7,6 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{root}}assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="manifest.json" />
     
     <title>{{title}}</title>
     <meta name="description" content="{{description}}">
@@ -85,7 +86,11 @@
     <span data-responsive-toggle="topbar-responsive" data-hide-for="large">
       <button class="menu-icon" type="button" data-toggle></button>
     </span>
-    <a class="topbar-responsive-logo" href="{{root}}index.html"><strong><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo" /></strong></a>
+    <div itemscope itemtype="http://schema.org/Organization">
+     <meta itemprop="name" content="Ketch Partners" />
+     <a class="topbar-responsive-logo" href="{{root}}index.html" itemprop="url"><strong><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo" itemprop="logo" /></strong></a>
+
+    </div>
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
@@ -107,15 +112,19 @@
 
 
 <!-- This is the first modal -->
+<aside>
 <div class="reveal" id="contact-form" data-reveal>
+  <div itemscope itemtype="http://schema.org/Organization">
   <h1 class="text-center">Contact Us</h1>
   <p class="lead">We’d Love to Hear From You, Get In Touch With Us!</p>
-  <p>Ketch</p>
-  <p>1075 Peachtree Street NE, Suite 3650</p>
-  <p>Atlanta, GA 30309 USA</p>
-  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
-  <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:1-404-996-0245">1-404-996-0245</a></p>
-   <p><i class="fas fa-fax" aria-hidden="true"></i>404-996-0243</p>
+  <p itemprop="name">Ketch Partners</p>
+  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <p><span itemprop="streetAddress">1075 Peachtree Street NE, Suite 3650</span></p>
+    <p><span itemprop="addressLocality">Atlanta, GA </span><span itemprop="postalCode">30309</span> USA</p>
+  </div>
+  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top"><span itemprop="email">info@ketch.partners</span></a></p>
+  <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:1-404-996-0245"><span itemprop="telephone">1-404-996-0245</span></a></p>
+   <p><i class="fas fa-fax" aria-hidden="true"></i><span itemprop="faxNumber">404-996-0243</span></p>
    <h2 class="text-center">Request Information</h2>
 
   <button class="button" id="contact-form-button" data-open="contact-form-question">Contact Us Online</button>
@@ -123,8 +132,11 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+</div>
+</aside>
 
 <!-- This is the nested modal -->
+<aside>
 <div class="reveal" id="contact-form-question" data-reveal>
 
   <form class="callout secondary text-center" id="questionForm" method="post">
@@ -152,6 +164,7 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+</aside>
 
 
 
@@ -215,7 +228,36 @@
     </div>
   </div>
 </footer>
+<script type="application/ld+json">
 
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.ketch.partners",
+  "name": "Ketch Partners",
+  "logo": "https://www.ketch.partners/assets/img/top-bar-logo.png",
+  "legalName": "Intenxus LLC",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-404-996-0245",
+    "faxNumber": "+1-404-996-0243",
+    "email": "info@ketch.partners",
+    "contactType": "Sales"
+  }
+}
+
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "about": "Technology service provider for SAP HANA enterprise applications",
+  "copyrightHolder": "Intenxus LLC",
+  "copyrightYear": "2018",
+  "name": "Ketch Partners Website"
+
+}
+</script>
 
 
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
