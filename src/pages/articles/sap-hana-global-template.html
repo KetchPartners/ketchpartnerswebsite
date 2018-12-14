@@ -18,28 +18,36 @@ twitter-title:
 twitter-description:
 twitter-author:
 twitter-image:
+datePublished: 2018-12-15
+dateModified: 2018-12-15
+datePublishedDisplay: 15 December 2018
 ---
 
 <div class="grid-container article-post-page"  id="newsletter-sticky">
 <div class="grid-x grid-margin-x">
   <div class="cell large-9">
 
-<div class="simple-article-header">
+<article class="simple-article-header" itemscope itemtype="http://schema.org/Article">
   <!-- Article Published Date & Reading Time -->
-  <p class="article-date-read">Published on: 1 December, 2018 - 3 min read</p>
+    <p class="article-date-read"><time itemprop="datePublished" datetime="{{datePublished}}">{{datePublishedDisplay}}</time> - 5 min read</p>
+  <meta itemprop="dateModified" content="{{dateModified}}" />
+  <div class="hide" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+  <p itemprop="name" class="hide">Ketch Partners<p>
+  <a href="{{root}}index.html" itemprop="url"><strong><img src="../assets/img/logo-top-bar.png" width="100px" alt="logo" itemprop="logo" /></strong></a>
+  </div>
   
   <!-- Article Title -->
-  <h4 class="article-title">
-    <a href="#">
+  <h1 class="article-title" itemprop="headline">
+    <a href="{{canonical}}" itemprop="mainEntityOfPage">
       SAP HANA S4 Global Implementation Template
     </a>
-  </h4>
+  </h1>
 
   <!-- Article Author Name & Comment Hyperlink -->
-  <p class="article-author-comments">
-    <em>by <a href="#">Chris York</a></em> 
-<!--    <a class="article-comments" href="#">3 Comments</a>-->
-  </p>
+  <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="article-author-comments" itemprop="name">
+    <em>by <a href="#about-author">Chris York</a></em> </p>
+  </div>
 
   <!-- Article Social Links -->
   <div class="article-social">
@@ -60,12 +68,12 @@ twitter-image:
   <!-- Article Image -->
   <div class="article-post-image">
     <div class="thumbnail">
-      <img class="article-image" src="{{root}}assets/img/articles/sap-hana-global-template-800x350-01.jpg" alt="SAP HANA S4 Global Implementation Template">
+      <img class="article-image" src="{{root}}assets/img/articles/sap-hana-global-template-800x350-01.jpg" alt="SAP HANA S4 Global Implementation Template" itemprop="image" />
     </div>
   </div>
 
   <!-- Article Post Content -->
-  <div class="article-post-content">
+  <div class="article-post-content" itemprop="articleBody">
 {{#markdown}} 
 
 ### CHALLENGES
@@ -86,7 +94,7 @@ Ketch then moved into the Realization phase where all gaps were resolved, design
 
 {{/markdown}}
   </div>
-</div>
+</article>
 
 <div class="callout about-author">
 {{> about-author-york}}
