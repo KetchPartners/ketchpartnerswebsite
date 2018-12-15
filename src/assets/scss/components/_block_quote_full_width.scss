@@ -1,4 +1,6 @@
 .blockquote-container {
+  background: $medium-gray;
+  border-radius: $global-radius;
   &.blockquote-left {
     float: left;
     width: 35%;
@@ -49,6 +51,5 @@
     }
   }
 }
-
 
 

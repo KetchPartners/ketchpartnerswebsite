@@ -152,6 +152,8 @@ function other() {
   .pipe(gulp.dest(PATHS.dist));
 }
 
+
+
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({

@@ -22,19 +22,24 @@ twitter-image:
 
 
 <div class="grid-container section-container">
-<div class="orbit clean-hero-slider" role="region" aria-label="Ketch Partners" data-orbit>
-  <div class="orbit-wrapper">
+  <div class="hero-image">
+    <div class="hero-text is-animating" id="hero-parent">
+      <div class="animate-one" id="animate-one">
+        <img src="{{root}}assets/img/logo-white-sails-only-300x300.png" alt="Ketch Partners" />
+        <p style="margin-top:10px;font-size:2rem;">Ketch Partners</p>
+      </div>
+      <div class="animate-two">
+        <h2 id="animate-two">Strategy</h2>
+      </div>
+      <div class="animate-three">
+        <h2 id="animate-three">Transformation</h2>
+      </div>
+      <div class="animate-four">
+        <h2 id="animate-four">Trust</h2>
+      </div>
 
-    <ul class="orbit-container">
-
-      <li class="orbit-slide">
-{{> slide2}}
-      </li>
-
-    </ul>
+    </div>
   </div>
-
-</div>
 </div>
 
 
@@ -64,7 +69,7 @@ twitter-image:
 
 <div class="grid-container">
 <!--<div class="grid-x grid-margin-x">
-  <div class="cell large-12" id="newsletter-sticky">-->
+  <div class="cell large-9">-->
 <h3 class="text-center" id="latest-news">Latest News</h3>
 {{> short-sap-hana-s4-client-case-study}}
 
