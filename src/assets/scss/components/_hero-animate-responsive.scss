@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../img/main-hero-index.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  img {
+    width: 100px;
+    margin-top: 1rem;
+  }
+  h2 {
+
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+    color: $secondary-color;
+    padding: 1rem;
+  }
+}
+
+
+@include mui-series {
+
+    .animate-one {
+      @include mui-queue(1s, 0s, fade);
+  }
+    .animate-two {
+      @include mui-queue(1s, 1s, fade, slide($direction: right));
+  }
+    .animate-three {
+      @include mui-queue(1s, 1s, fade, slide($direction: left));
+  }
+    .animate-four {
+      @include mui-queue(1s, 1s, fade, slide($direction: right));
+  }
+
+}
+
+
+@include breakpoint(large up) {
+
+}
