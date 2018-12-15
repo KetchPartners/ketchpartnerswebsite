@@ -4,10 +4,10 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* This is the background image for the ketch index page*/
   background-image: url("../img/main-hero-index.jpg");
 
-  /* Set a specific height */
+  /* This sets the height of the hero image */
   height: 500px;
 
   /* Position and center the image to scale nicely on all screens */
@@ -60,5 +60,5 @@ body, html {
 
 
 @include breakpoint(large up) {
-
+  // awaiting chris response
 }

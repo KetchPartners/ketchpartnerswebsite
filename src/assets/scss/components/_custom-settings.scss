@@ -72,7 +72,8 @@ nav.top-bar-full {
 
 
 #industries-1, #industries-2, #industries-3, industries-4, #industries-5, #industries-6, #industries-7, industries-8  {
-  background: scale-color($secondary-color, $lightness: 80%);
+  background: $primary-color;
+  color: #white;
 }
 
 .industry-card {
@@ -150,4 +151,6 @@ nav.top-bar-full {
 }
   
 
-
+.inline-icon {
+  margin-right: 1rem;
+}

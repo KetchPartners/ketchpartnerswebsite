@@ -81,6 +81,7 @@
       </div>
     </div>
   </nav>    -->
+<div class="grid-container">
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
     <span data-responsive-toggle="topbar-responsive" data-hide-for="large">
@@ -108,71 +109,56 @@
     </div>
   </div>
 </nav>
-
-
-
-<!-- This is the first modal -->
-<aside>
-<div class="reveal" id="contact-form" data-reveal>
-  <div itemscope itemtype="http://schema.org/Organization">
-  <h1 class="text-center">Contact Us</h1>
-  <p class="lead">We’d Love to Hear From You, Get In Touch With Us!</p>
-  <p itemprop="name">Ketch Partners</p>
-  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <p><span itemprop="streetAddress">1075 Peachtree Street NE, Suite 3650</span></p>
-    <p><span itemprop="addressLocality">Atlanta, GA </span><span itemprop="postalCode">30309</span> USA</p>
-  </div>
-  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top"><span itemprop="email">info@ketch.partners</span></a></p>
-  <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:1-404-996-0245"><span itemprop="telephone">1-404-996-0245</span></a></p>
-   <p><i class="fas fa-fax" aria-hidden="true"></i><span itemprop="faxNumber">404-996-0243</span></p>
-   <h2 class="text-center">Request Information</h2>
-
-  <button class="button" id="contact-form-button" data-open="contact-form-question">Contact Us Online</button>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-</div>
-</aside>
-
-<!-- This is the nested modal -->
-<aside>
-<div class="reveal" id="contact-form-question" data-reveal>
-
-  <form class="callout secondary text-center" id="questionForm" method="post">
-  <h2>Submit Question for Information</h2>
-  <div class="floated-label-wrapper">
-    <label for="full-name">Full name</label>
-    <input type="text" id="questionName" name="full name input" placeholder="Full name">
-  </div>
-  <div class="floated-label-wrapper">
-    <label for="email">Email</label>
-    <input type="email" id="questionEmail" name="email input" placeholder="Email">
-  </div>
-  <div class="floated-label-wrapper">
-    <label for="question">Question</label>
-    <input type="text" id="questionMessage" name="question input" placeholder="Question?">
-  </div>
-  <input class="button expanded" id="questionSubmit" type="submit" value="Submit">
-  <div class="callout success hide" id="questionSuccess">Thank You For Your Inquiry, We Will Get Back To You Shortly.</div>
-</form>
-
-
-
-
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-</aside>
-
-
+ </div> 
 
 
 <div class="body-background">
 
 {{> body}}
 </div>
+
+<!-- This is the first modal -->
+<aside>
+<div class="reveal" id="contact-form" data-reveal>
+  <div>
+  <h1 class="text-center">Contact Us</h1>
+  <p class="text-center">We’d Love to Hear From You, Get In Touch With Us!</p>
+  </div>
+  <p class="text-center"><i class="fas fa-envelope-open inline-icon" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top"><span>info@ketch.partners</span></a></p>
+  <p class="text-center"><i class="fas fa-phone inline-icon" aria-hidden="true"></i><a href="tel:1-404-996-0245">1-404-996-0245</a></p>
+
+  <div class="floated-label-wrapper">
+    <label for="full-name">Company</label>
+    <input type="text" id="questionCompany" name="Company input" placeholder="Company">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="full-name">Full name</label>
+    <input type="text" id="questionName" name="full name input" placeholder="Full name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="email">Email</label>
+    <input type="email" id="questionEmail" name="email input" placeholder="Email" required>
+  </div>
+    <div class="floated-label-wrapper">
+    <label for="Phone">Phone</label>
+    <input type="tel" id="questionPhone" name="phone input" placeholder="Phone">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="question">Question</label>
+    <input type="text" id="questionMessage" name="question input" placeholder="Question?">
+  </div>
+  <input class="button expanded" id="questionSubmit" type="submit" value="Submit">
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="callout success hide" id="questionSuccess">Thank You For Your Inquiry, We Will Get Back To You Shortly.</div>
+</form>
+
+</div>
+</div>
+</aside>
+
+
 
 <footer class="marketing-site-footer">
   <div class="row medium-unstack">
