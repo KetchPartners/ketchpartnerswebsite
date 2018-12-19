@@ -97,15 +97,16 @@
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
-      <ul class="menu vertical medium-horizontal">
+      <ul class="menu vertical medium-horizontal" id="top-bar-small">
         <li class="text-center"><a href="{{root}}index.html">Home</a></li>
         <li class="text-center"><a href="{{root}}about.html">About</a></li>
         <li class="text-center"><a href="{{root}}services.html">Services</a></li>
         <li class="text-center"><a href="{{root}}industries.html">Industries</a></li>
         <li class="text-center"><a href="{{root}}testimonials.html">Testimonials</a></li>
+        <li class="text-center show-for-small-only"><a data-open="contact-form">Contacts</a></li>
 <!--        <li class="text-center"><a href="{{root}}articles.html">Articles</a></li>-->
         <li>
-          <button type="button" class="button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
+          <button type="button" class="hide-for-small-only button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
         </li>
       </ul>
     </div>
