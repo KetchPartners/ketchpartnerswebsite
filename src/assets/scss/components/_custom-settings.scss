@@ -154,3 +154,42 @@ nav.top-bar-full {
 .inline-icon {
   margin-right: 1rem;
 }
+
+
+
+#press-release-wrapper {
+  background-color: $medium-gray;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  #press-release-header {
+
+  color: $primary-color;
+  font-size: 1.5rem;
+}
+
+  #press-release-container {
+  border: none;
+
+}
+}
+
+
+#newsletter-wrapper {
+  background-color: $primary-color;
+  border-radius: $global-radius;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
+  padding: 1rem;
+
+  #newsletter-header {
+
+  color: $white;
+  font-size: 1.5rem;
+}
+
+  #newsletter-container {
+  border: none;
+  background-color: $medium-gray;
+}
+}

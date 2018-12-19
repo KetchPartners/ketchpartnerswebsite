@@ -32,7 +32,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide, other));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide, manifest, robots));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -147,11 +147,15 @@ function images() {
 }
 
 // other files to copy over
-function other() {
+function manifest() {
    return gulp.src(['src/pages/manifest.json'])
   .pipe(gulp.dest(PATHS.dist));
 }
 
+function robots() {
+   return gulp.src(['src/pages/robots.txt'])
+  .pipe(gulp.dest(PATHS.dist));
+}
 
 
 // Start a server with BrowserSync to preview the site in
@@ -178,5 +182,6 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
-  gulp.watch('src/pages/manifest.json').on('all', gulp.series(other, browser.reload));
+  gulp.watch('src/pages/manifest.json').on('all', gulp.series(manifest, browser.reload));
+  gulp.watch('src/pages/robots.txt').on('all', gulp.series(robots, browser.reload));
 }

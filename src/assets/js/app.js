@@ -137,4 +137,22 @@ function saveSubscribe(subscribeEmail){
 
 
 
+var newsletterRef = firebase.database().ref('newsletter');
 
+
+$('#newsletterSubmit').on("click", function( event ) {  
+    event.preventDefault();
+    // get values
+    var subscribeEmail = document.getElementById('newsletterEmail').value;
+    // save message
+    saveSubscribNewsletter(newsletterEmail);
+
+
+});
+
+function saveSubscribeNewsletter(newsletterEmail){
+  var newsletterRef = newsletterRef.push();
+  newSubscribeRef.set({
+    email: snewsletterEmail
+  });
+}

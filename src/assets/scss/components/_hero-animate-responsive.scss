@@ -26,17 +26,18 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
   img {
     width: 100px;
     margin-top: 1rem;
   }
   h2 {
 
-    font-size: 3rem;
     margin: 0;
-    font-weight: 900;
+
     color: $secondary-color;
     padding: 1rem;
+
   }
 }
 
@@ -45,6 +46,7 @@ body, html {
 
     .animate-one {
       @include mui-queue(1s, 0s, fade);
+
   }
     .animate-two {
       @include mui-queue(1s, 1s, fade, slide($direction: right));
@@ -59,6 +61,31 @@ body, html {
 }
 
 
-@include breakpoint(large up) {
-  // awaiting chris response
+#animate-one {
+  font-family: factoria, serif;
+  font-weight: 700;
+  font-style: italic;
+
+}
+
+#animate-two, #animate-three, #animate-four {
+   font-family: amboy-inline, sans-serif;
+   font-weight: 400;
+   font-style: normal;  
+
+}
+
+
+#animate-one p {
+  font-size: 2rem;
+  @include breakpoint(small only) {
+     font-size: 1.5rem;
+  }
+}
+
+#animate-two, #animate-three, #animate-four h2 {
+  font-size: 3rem;
+    @include breakpoint(small only) {
+     font-size: 1.5rem;
+  }
 }

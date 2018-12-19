@@ -11,7 +11,8 @@ $social-brand-google-plus: #dd4b39;
   @include breakpoint(medium) {
   padding: 1.3rem 4rem 2rem 4rem;
   }
-  border: none;
+  border: 1px solid $light-gray;
+  @include box-shadow(5px, 5px, 5px, $light-gray);
   border-radius: $global-radius;
   margin-bottom: 1rem;
 // @include box-shadow(5px, 5px, 5px, $light-gray);
