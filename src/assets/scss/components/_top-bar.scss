@@ -121,6 +121,9 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     max-width: 300px;
   }
 
-
-
-
+@include breakpoint(small only) {
+  #top-bar-small {
+    background: $light-gray;
+    margin-top: 1rem;
+  }
+}

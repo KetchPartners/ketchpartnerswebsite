@@ -1,0 +1,43 @@
+
+                            
+/* TEAM */
+
+                            
+Name: David Beach
+Contact: david.beach@adaptivexyz.com
+Title: Site Architect
+From: New York, NY
+
+Name: Matthew Carlos
+Contact: mateo.carlos@adaptivexyz.com
+Title: Graphic Designer
+From: San Francisco, CA
+
+Name: Chris York
+Contact: cyork@ketch.partners
+Title: CEO Ketch Partners and Blog Author
+From: Atlanta, GA
+
+                         
+						
+/* THANKS */
+
+							
+Name: Zurb Foundation for Sites
+Contact: 
+
+
+                            
+/* SITE */
+
+                            
+Last update: 2018-12-20
+
+                            
+Standards: HTML5, CSS3,..
+
+                            
+Components: Zurb Foundation for Sites, jQuery, Firebase Hosting, Firebase Database, Firebase Storage
+
+                            
+Software: Sublime, Atom, Adobe Photoshop, Adobe Illustrator, Adobe In Design, Babel, Grammarly, Hemmingway, webpack, Google Firebase, Foundation for Sites Zurb Template 6, Git, Github, Jquery, Motion-ui, SCSS, Foundation Equalizer. Zurb Panini, Style Shepra, zsh, oh-my-zsh.

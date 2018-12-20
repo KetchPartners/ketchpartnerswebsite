@@ -9,15 +9,15 @@
     <link rel="shortcut icon" href="{{root}}assets/img/favicons/favicon.ico">
     <link rel="manifest" href="manifest.json" />
     
-    <title>{{title}}</title>
-    <meta name="description" content="{{description}}">
-    <meta name="og:title" property="og:title" content="{{title}}">
+    <title>{{page-title}}</title>
+    <meta name="description" content="{{page-description}}">
+    <meta name="og:title" property="og:title" content="{{page-title}}">
     <meta name="robots" content="{{robots}}">
     <link href="{{canonical}}" rel="canonical">
     <meta property="og:title" content="Your Title Here" />
-    <meta property="og:type" content="{{type}}" />
-    <meta property="og:url" content="{{canonical}}" />
-    <meta property="og:description" content="{{description}}" />
+    <meta property="og:type" content="{{og-type}}" />
+    <meta property="og:url" content="{{og-url}}" />
+    <meta property="og:description" content="{{og-description}}" />
     <meta property="og:site_name" content="Ketch Partners" />
 
     <link rel="stylesheet" href="{{root}}assets/css/app.css?version=0.3">
@@ -97,15 +97,16 @@
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
-      <ul class="menu vertical medium-horizontal">
+      <ul class="menu vertical medium-horizontal" id="top-bar-small">
         <li class="text-center"><a href="{{root}}index.html">Home</a></li>
         <li class="text-center"><a href="{{root}}about.html">About</a></li>
         <li class="text-center"><a href="{{root}}services.html">Services</a></li>
         <li class="text-center"><a href="{{root}}industries.html">Industries</a></li>
         <li class="text-center"><a href="{{root}}testimonials.html">Testimonials</a></li>
+        <li class="text-center show-for-small-only"><a data-open="contact-form">Contacts</a></li>
 <!--        <li class="text-center"><a href="{{root}}articles.html">Articles</a></li>-->
         <li>
-          <button type="button" class="button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
+          <button type="button" class="hide-for-small-only button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
         </li>
       </ul>
     </div>
