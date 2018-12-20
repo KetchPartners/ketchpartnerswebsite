@@ -32,7 +32,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide, manifest, robots));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide, manifest, robots, sitemap, humans));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -157,6 +157,16 @@ function robots() {
   .pipe(gulp.dest(PATHS.dist));
 }
 
+function sitemap() {
+   return gulp.src(['src/pages/sitemap.xml'])
+  .pipe(gulp.dest(PATHS.dist));  
+}
+
+function humans() {
+   return gulp.src(['src/pages/humans.txt'])
+  .pipe(gulp.dest(PATHS.dist));  
+}
+
 
 // Start a server with BrowserSync to preview the site in
 function server(done) {
@@ -184,4 +194,6 @@ function watch() {
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
   gulp.watch('src/pages/manifest.json').on('all', gulp.series(manifest, browser.reload));
   gulp.watch('src/pages/robots.txt').on('all', gulp.series(robots, browser.reload));
+  gulp.watch('src/pages/sitemap.xml').on('all', gulp.series(sitemap, browser.reload));
+  gulp.watch('src/pages/sitemap.xml').on('all', gulp.series(humans, browser.reload));
 }
