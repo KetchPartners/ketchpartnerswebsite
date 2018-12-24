@@ -1,18 +1,4 @@
 
-  var config = {
-    apiKey: "AIzaSyAmgp7FQ0KWhcWYOBQ97Oxh0u67gjbgXxk",
-    authDomain: "ketchpartnersproduction.firebaseapp.com",
-    databaseURL: "https://ketchpartnersproduction.firebaseio.com",
-    projectId: "ketchpartnersproduction",
-    storageBucket: "ketchpartnersproduction.appspot.com",
-    messagingSenderId: "787961167035"
-  };
-  firebase.initializeApp(config);
-
-
-  var storage = firebase.storage();
-
-
 
 import $ from 'jquery';
 import whatInput from 'what-input';
@@ -44,6 +30,7 @@ $(function () {
   });
 });
 
+/*
 // reference inquiry question collection
 
 var questionRef = firebase.database().ref('inqury');
@@ -158,4 +145,4 @@ function saveNewsletterSubscribe(newsletterSubscribeEmail){
 }
 
 
-
+*/

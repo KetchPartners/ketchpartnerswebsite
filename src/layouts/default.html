@@ -156,7 +156,23 @@
 
 <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
 
+<script>
+  
+  var config = {
+    apiKey: "AIzaSyAmgp7FQ0KWhcWYOBQ97Oxh0u67gjbgXxk",
+    authDomain: "ketchpartnersproduction.firebaseapp.com",
+    databaseURL: "https://ketchpartnersproduction.firebaseio.com",
+    projectId: "ketchpartnersproduction",
+    storageBucket: "ketchpartnersproduction.appspot.com",
+    messagingSenderId: "787961167035"
+  };
+  firebase.initializeApp(config);
 
+
+  var storage = firebase.storage();
+
+
+</script>
 
 <script type="application/ld+json">
 
@@ -193,7 +209,7 @@
 
 
 <script src="{{root}}assets/js/app.js?"></script>
-
+<script>var questionRef=firebase.database().ref("inqury");var $questionForm=$("#questionForm");$questionForm.submit(function(event){event.preventDefault();var questionData=$questionForm.serializeArray();questionRef.push(questionData,function(err){if(err){window.alert("Error when submitting data: "+err.message)}});$("#questionForm")[0].reset();$("#questionSuccess").fadeIn("slow").removeClass("hide")});var subscribeRef=firebase.database().ref("subscribe");$("#subscribeSubmit").on("click",function(event){event.preventDefault();var subscribeEmail=document.getElementById("subscribeEmail").value;saveSubscribe(subscribeEmail);var storage=firebase.app().storage("gs://openketch1.appspot.com");var storageRef=firebase.storage().ref();var newsletterRef=storageRef.child("newsletter/newsletter.pdf");newsletterRef.getDownloadURL().then(function(url){console.log(url);$("#downloadModal").foundation("open");$("#downloadLink").attr("href",url)})["catch"](function(error){switch(error.code){case"storage/object-not-found":alert("Download is not available at this time, please try again later");break;case"storage/unauthorized":alert("Server authorizatino error");break;case"storage/canceled":alert("Canceled");break;case"storage/unknown":alert("Download is not available at this time, please try again later");break;default:alert("Error");break}})});function saveSubscribe(subscribeEmail){var newSubscribeRef=subscribeRef.push();newSubscribeRef.set({email:subscribeEmail})}var newsletterSubscribeRef=firebase.database().ref("newsletterSubscribe");$("#newsletterSubscribeSubmit").on("click",function(event){event.preventDefault();var newsletterSubscribeEmail=document.getElementById("newsletterSubscribeEmail").value;saveNewsletterSubscribe(newsletterSubscribeEmail);window.alert("Thank You For Subscribing")});function saveNewsletterSubscribe(newsletterSubscribeEmail){var newsletterSubscribeSet=newsletterSubscribeRef.push();newsletterSubscribeSet.set({email:newsletterSubscribeEmail})}</script>
 
 <script id="dsq-count-scr" src="//ketch-partners.disqus.com/count.js" async></script>
 
