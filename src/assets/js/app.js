@@ -1,18 +1,3 @@
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyADC26CQCUuf9TPeSoTAol6SrQJsZOE71g",
-    authDomain: "openketch1.firebaseapp.com",
-    databaseURL: "https://openketch1.firebaseio.com",
-    projectId: "openketch1",
-    storageBucket: "openketch1.appspot.com",
-    messagingSenderId: "248102258799"
-  };
-
-  firebase.initializeApp(config);
-
-
-  var storage = firebase.storage();
-
 
 
 import $ from 'jquery';
@@ -45,6 +30,7 @@ $(function () {
   });
 });
 
+/*
 // reference inquiry question collection
 
 var questionRef = firebase.database().ref('inqury');
@@ -68,9 +54,7 @@ $questionForm.submit(function(event) {
 var subscribeRef = firebase.database().ref('subscribe');
 
 
-// Modal contact form
-
-
+// download case study on articles pages
 
 
 $('#subscribeSubmit').on("click", function( event ) {  
@@ -123,11 +107,6 @@ $('#subscribeSubmit').on("click", function( event ) {
 
 
 
-
-
-
-
-
 function saveSubscribe(subscribeEmail){
   var newSubscribeRef = subscribeRef.push();
   newSubscribeRef.set({
@@ -135,24 +114,35 @@ function saveSubscribe(subscribeEmail){
   });
 }
 
+// subscribe to newsletter
 
 
-var newsletterRef = firebase.database().ref('newsletter');
+var newsletterSubscribeRef = firebase.database().ref('newsletterSubscribe');
 
 
-$('#newsletterSubmit').on("click", function( event ) {  
+// download case study on articles pages
+
+
+$('#newsletterSubscribeSubmit').on("click", function( event ) {  
     event.preventDefault();
     // get values
-    var subscribeEmail = document.getElementById('newsletterEmail').value;
+    var newsletterSubscribeEmail = document.getElementById('newsletterSubscribeEmail').value;
     // save message
-    saveSubscribNewsletter(newsletterEmail);
-
+    saveNewsletterSubscribe(newsletterSubscribeEmail);
+    window.alert('Thank You For Subscribing');
+    
 
 });
 
-function saveSubscribeNewsletter(newsletterEmail){
-  var newsletterRef = newsletterRef.push();
-  newSubscribeRef.set({
-    email: snewsletterEmail
+
+
+
+function saveNewsletterSubscribe(newsletterSubscribeEmail){
+  var newsletterSubscribeSet = newsletterSubscribeRef.push();
+  newsletterSubscribeSet.set({
+    email: newsletterSubscribeEmail
   });
 }
+
+
+*/

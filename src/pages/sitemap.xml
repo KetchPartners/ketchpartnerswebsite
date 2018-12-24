@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://www.ketch.partners/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/about/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/services/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/industries/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/testimonials/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-hana-s4-client-case-study-article/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-ssc-solution-sales-contracts/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-hana-global-template/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-greenfield-implementation/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-central-finance/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/articles/sap-eppm/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/privacy/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.ketch.partners/terms/</loc>
+
+      <lastmod>2018-21-2018</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
+
+</urlset>
