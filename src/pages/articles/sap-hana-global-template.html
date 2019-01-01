@@ -1,48 +1,56 @@
 ---
 layout: default
-page-title: Ketch Partners
-page-description: Ketch Partners About Us Page
-canonical: https://ketch.partners/about.html/
-robots: noindex, nofollow
+page-title: Simplified SAP HANA S4 Implementations Using Global Template Approach
+page-description: Simplified SAP HANA S4 Implementations Using Global Template Approach
+canonical: https://ketch.partners/articles/sap-hana-global-template/
+robots: index,follow
 rating:
-og-title:
-og-type: website
-og-url:
-og-image:
-og-description:
-og-sitename:
+og-title: SAP HANA S4 Global Implementation Template
+og-type: article
+og-url: https://ketch.partners/articles/sap-hana-global-template/
+og-image: https://ketch.partners/assets/img/articles/sap-hana-global-template-800x350-01.jpg
+og-description: Simplified SAP HANA S4 Implementations Using Global Template Approach
+og-sitename: Ketch Partners
 fb-id:
-twitter-summary:
+twitter-summary: Simplified SAP HANA S4 Implementations Using Global Template Approach
 twitter-handle:
-twitter-title:
-twitter-description:
-twitter-author:
-twitter-image:
+twitter-title: SAP HANA S4 Global Implementation Template
+twitter-description: Simplified SAP HANA S4 Implementations Using Global Template Approach
+twitter-author: chris_r_york
+twitter-image: https://ketch.partners/assets/img/articles/sap-hana-global-template-300x300-01.jpg
+datePublished: 2018-12-26
+dateModified: 2018-12-26
+datePublishedDisplay: 26 December 2018
 ---
 
 <div class="grid-container article-post-page"  id="newsletter-sticky">
 <div class="grid-x grid-margin-x">
   <div class="cell large-9">
 
-<div class="simple-article-header">
+<article class="simple-article-header" itemscope itemtype="http://schema.org/Article">
   <!-- Article Published Date & Reading Time -->
-  <p class="article-date-read">Published on: 1 December, 2018 - 3 min read</p>
+    <p class="article-date-read"><time itemprop="datePublished" datetime="{{datePublished}}">{{datePublishedDisplay}}</time> - 5 min read</p>
+  <meta itemprop="dateModified" content="{{dateModified}}" />
+  <div class="hide" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+  <p itemprop="name" class="hide">Ketch Partners<p>
+  <a href="{{root}}index.html" itemprop="url"><strong><img src="../assets/img/logo-top-bar.png" width="100px" alt="logo" itemprop="logo" /></strong></a>
+  </div>
   
   <!-- Article Title -->
-  <h4 class="article-title">
-    <a href="#">
+  <h1 class="article-title" itemprop="headline">
+    <a href="{{canonical}}" itemprop="mainEntityOfPage">
       SAP HANA S4 Global Implementation Template
     </a>
-  </h4>
+  </h1>
 
   <!-- Article Author Name & Comment Hyperlink -->
-  <p class="article-author-comments">
-    <em>by <a href="#">Chris York</a></em> 
-<!--    <a class="article-comments" href="#">3 Comments</a>-->
-  </p>
+  <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="article-author-comments" itemprop="name">
+    <em>by <a href="#about-author">Chris York</a></em> </p>
+  </div>
 
   <!-- Article Social Links -->
-  <div class="article-social">
+<!--  <div class="article-social">
     <a href="#" class="button social facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
@@ -55,38 +63,42 @@ twitter-image:
     <a href="#" class="button social google-plus">
       <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
     </a>
-  </div>
+  </div>-->
 
   <!-- Article Image -->
   <div class="article-post-image">
     <div class="thumbnail">
-      <img class="article-image" src="{{root}}assets/img/articles/sap-hana-global-template-800x350-01.jpg" alt="SAP HANA S4 Global Implementation Template">
+      <img class="article-image" src="{{root}}assets/img/articles/sap-hana-global-template-800x350-01.jpg" alt="SAP HANA S4 Global Implementation Template" itemprop="image" />
     </div>
   </div>
 
   <!-- Article Post Content -->
-  <div class="article-post-content">
+  <div class="article-post-content" itemprop="articleBody">
 {{#markdown}} 
 
-### CHALLENGES
+### CHALLENGES - DISPARATE SYSTEMS AND LINES OF BUSINESS
 
-This multinational conglomerate was operating in an evolving market and the company recognized that they needed to move aggressively to a recurring revenue model for their business.  The company had recognized that it was unable to effect this change economically as its subsidiaries were operating multiple country locations independently across a variety of SAP and non-SAP systems.  Leadership wanted to integrate all business units into a global template of SAP-based business process solutions while allowing for localizations where required.  The group wanted to leverage economies of scale by leveraging business process sharing but was uncertain how closely the work was aligned. Recognizing that not all processes were identical, there was concern that without a global template design as the basis of core business operations, their ability to deliver global financials easily would be severely constrained.  Ultimately, without this $10MM+ investment in transformation their ability to grow and adapt in their market would be limited.  
+This multinational conglomerate was operating in an evolving market.   The company recognized that they needed to move aggressively to a recurring revenue model for their business.  The company recognized they were unable to effect this change economically .  Their subsidiaries were operating both SAP and non-SAP Systems. They had to contend with multiple countries and languages.  Leadership wanted to integrate all business units into a global template.  The goal was SAP-based business processes as the standard solution.  However, allowing for localizations where required.  They wanted to leverage economies of scale by leveraging business process sharing.  They were uncertain how closely the processes matched across lines of business. There was concern that their ability to deliver global financials would be severely constrained.  Without a global template design as the basis of operations they knew they would be successful. Ultimately, without this $10MM+ investment their ability to transform and grow would be limited.
 
-### INSIGHT
+### INSIGHT - ROAD MAP TO A GLOBAL TEMPLATE
 
-The company’s three major regions were Asia, Europe, and the US, with the US program being first out of the gate to define the template solutions. Together Ketch and the client defined multiple countries, multiple legal-entity approaches to moving the entire company onto one global template of S/4 HANA. Using Ketch Building Block Methods provided the path to harmonize the business processes between the companies, while still allowing for localization.  During Ketch’s BPA (Best Practice Alignment) phase we demonstrated in system processes, drove toward commonality, eliminated redundancy and defined gaps that needed to be filled to meet local departmental needs.  Furthermore, cornerstones of the solution included configurable recurring revenue services, a flexible contract model that would scale as large as the client desired and a modern user experience leveraging SAP Fiori and Open Source web apps.  
+The company’s three major regions were Asia, Europe, and the US.  The US program was first out of the gate to define the template solutions. Together Ketch and the client defined multiple approaches for moving the company onto a global template.  A risk and benefit analysis was completed on each option.  Country specific considerations were incorporated into the analysis.  The result was a roadmap to one global template of *SAP HANA* S4. Ketch Building Block Methods provided the path to harmonize the business processes.  Commonality between the companies was captured while still allowing for localization.  During Ketch’s BPA (Best Practice Alignment) phase we demonstrated in system processes.   This drove toward commonality, eliminated redundancy and defined gaps.  Gaps for local, regulatory and global defined scope for the project.  Furthermore, cornerstones of the solution included:
+- configurable recurring revenue services
+- a flexible contract model that would scale as large as the client desired
+- a modern user experience leveraging SAP Fiori
+- Open Source web apps
 
-### SOLUTION
+### SOLUTION - BUILDING BLOCK METHODS
 
-Ketch developed and had been practicing our Building Block Methods and tools for two years before SAP released their SAP Activate approach which follows similar rapid prototyping processes.  Our initial phase is called Best Practice Alignment. In it, we show the potential future state processes by leveraging standard processes in a demonstration system using client data.  This requires some basic knowledge of the client’s business without trying to recreate the highly customized solution they currently use.  Therefore, subject matter experts from each line of business were present to validate alignment to the common global template processes and identify any localization required.  The result was a nearly complete process design for a multi-national company in just sixteen weeks.  
+Ketch developed  our Building Block Methods 10 years ago.  We had been practicing our approach for 2 years before SAP released SAP Activate. SAP Activate follows similar rapid prototyping processes.  Our initial phase is called Best Practice Alignment. In it, we show the future state processes in a demonstration system using client data.  This requires some basic knowledge of the client’s business. We show without trying to recreate the highly customized solution they currently use.  Subject matter experts from each line of business were present.  They validated alignment to the common global template processes.  They also identified any localization required.  The result was a nearly complete process design for a multi-national company in just sixteen weeks.
 
-Ketch then moved into the Realization phase where all gaps were resolved, designed, built and tested.  The most comprehensive solution leveraged SAP Variant Configuration capabilities with a quantity contract to deliver a flexible, scalable platform for numerous business models.  An unexpected challenge was the level of business engagement during realization.  We found that identifying decision makers and getting them engaged at the proper times was challenging and caused numerous delays in finalizing or even reworking solutions to align to all decision makers.  Once program leadership made the shift and provided dedicated business team members, decision making and solution design became much easier and project momentum was restored.  We fostered a period checkpoint with European and Asian counterparts to validate template process designs via design review sessions that ensured we had designed solutions that could be leveraged globally.
+Ketch then moved into the Realization phase where all gaps were resolved, designed, built and tested.  The most comprehensive solution leveraged SAP Variant Configuration.  We leveraged the SAP HANA quantity contract.  The result was a flexible, scalable platform for numerous business models.  An unexpected challenge was the level of business engagement during realization.  We found that identifying decision makers and getting them engaged was challenging. This caused numerous delays in finalizing solutions to align to all decision makers.  Program leadership made the shift and provided dedicated business team members.  This increased project momentum, decision making and solution design resolution. We held a periodic checkpoint with International counterparts to validate template process designs. These design review sessions ensured we delivered solutions that could be leveraged globally.
 
 
 
 {{/markdown}}
   </div>
-</div>
+</article>
 
 <div class="callout about-author">
 {{> about-author-york}}
@@ -101,8 +113,8 @@ Ketch then moved into the Realization phase where all gaps were resolved, design
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
       var disqus_config = function () {
-      this.page.url = 'https://openketch1.firebaseapp.com/articles/sap-hana-global-template.html/';  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = '9ef09ae483ef0928cc9a0042bce5084e'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = 'https://openketch1.firebaseapp.com/articles/sap-hana-global-template/';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = '2018-12-26-04'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
       (function() { // DON'T EDIT BELOW THIS LINE
@@ -116,9 +128,9 @@ Ketch then moved into the Realization phase where all gaps were resolved, design
  </div>
 
   </div>
-  <div class="cell large-3 show-for-large" data-sticky-container>
+  <div class="cell large-3" data-sticky-container>
 
-{{> form-newsletter-subscribe}}
+{{> newsletter-subscribe}}
 
 
 

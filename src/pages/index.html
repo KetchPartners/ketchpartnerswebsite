@@ -1,40 +1,44 @@
 ---
 layout: default
-page-title: Ketch Partners
-page-description: Ketch Partners About Us Page
-canonical: https://ketch.partners/index.html/
-robots: noindex, nofollow
+page-title: Ketch Partners Landing Page
+page-description: Ketch Partners Technololgy Service Provider Specializing in SAP solutions.
+canonical: https://ketch.partners/
+robots: index,follow
 rating:
-og-title:
+og-title: Ketch Partners Landing Page
 og-type: website
-og-url:
-og-image:
-og-description:
-og-sitename:
+og-url: https://ketch.partners/
+og-image: https://ketch.partners/assets/img/logo-top-bar.png
+og-description: Ketch Partners SAP HANA System Integration and Business Transformation
+og-sitename: Ketch Partners
 fb-id:
-twitter-summary:
+twitter-summary: SAP HANA System Integration and Business Transformation
 twitter-handle:
-twitter-title:
-twitter-description:
-twitter-author:
-twitter-image:
+twitter-title: Ketch Partners Landing PAge
+twitter-description: Ketch Partners Technololgy Service Provider Specializing in SAP solutions.
+twitter-author: chris_r_york
+twitter-image: https://ketch.partners/assets/img/logo-top-bar.png
 ---
 
 
 <div class="grid-container section-container">
-<div class="orbit clean-hero-slider" role="region" aria-label="Ketch Partners" data-orbit>
-  <div class="orbit-wrapper">
+  <div class="hero-image">
+    <div class="hero-text is-animating" id="hero-parent">
+      <div class="animate-one" id="animate-one">
+        <p id="animate-one">SAP HANA System Integration and Business Transformation</p>
+      </div>
+      <div class="animate-two">
+        <h2 id="animate-two">Strategy</h2>
+      </div>
+      <div class="animate-three">
+        <h2 id="animate-three">Transformation</h2>
+      </div>
+      <div class="animate-four">
+        <h2 id="animate-four">Trust</h2>
+      </div>
 
-    <ul class="orbit-container">
-
-      <li class="orbit-slide">
-{{> slide2}}
-      </li>
-
-    </ul>
+    </div>
   </div>
-
-</div>
 </div>
 
 
@@ -64,7 +68,7 @@ twitter-image:
 
 <div class="grid-container">
 <div class="grid-x grid-margin-x">
-  <div class="cell large-9" id="newsletter-sticky">
+  <div class="cell large-9">
 <h3 class="text-center" id="latest-news">Latest News</h3>
 {{> short-sap-hana-s4-client-case-study}}
 
@@ -78,15 +82,12 @@ twitter-image:
 
 {{> sap-eppm}}
 
+</div>
+  <div class="cell large-3">
+  {{> press-releases}}
+
+  {{> newsletter-subscribe-2}}
   </div>
-  <div class="cell large-3 show-for-large" data-sticky-container>
-
-{{> form-newsletter-subscribe}}
-
-
-  </div>
-
-
 
 </div>
 </div>     

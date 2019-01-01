@@ -1,18 +1,3 @@
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyADC26CQCUuf9TPeSoTAol6SrQJsZOE71g",
-    authDomain: "openketch1.firebaseapp.com",
-    databaseURL: "https://openketch1.firebaseio.com",
-    projectId: "openketch1",
-    storageBucket: "openketch1.appspot.com",
-    messagingSenderId: "248102258799"
-  };
-
-  firebase.initializeApp(config);
-
-
-  var storage = firebase.storage();
-
 
 
 import $ from 'jquery';
@@ -20,10 +5,11 @@ import whatInput from 'what-input';
 
 window.$ = $;
 
-import Foundation from 'foundation-sites';
+
+// import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+import './lib/foundation-explicit-pieces';
 
 
 $(document).foundation();
@@ -44,6 +30,7 @@ $(function () {
   });
 });
 
+/*
 // reference inquiry question collection
 
 var questionRef = firebase.database().ref('inqury');
@@ -67,9 +54,7 @@ $questionForm.submit(function(event) {
 var subscribeRef = firebase.database().ref('subscribe');
 
 
-// Modal contact form
-
-
+// download case study on articles pages
 
 
 $('#subscribeSubmit').on("click", function( event ) {  
@@ -108,17 +93,16 @@ $('#subscribeSubmit').on("click", function( event ) {
             break;
 
           case 'storage/unknown':
-            alert("Download is not available at this time, please try again later")
+            alert("Download is not available at this time, please try again later");
+            break;
+
+          default:
+            alert("Error");
             break;
         }
       });
 
 });
-
-
-
-
-
 
 
 
@@ -130,8 +114,35 @@ function saveSubscribe(subscribeEmail){
   });
 }
 
-
-// listen for the contact us modal
-
+// subscribe to newsletter
 
 
+var newsletterSubscribeRef = firebase.database().ref('newsletterSubscribe');
+
+
+// download case study on articles pages
+
+
+$('#newsletterSubscribeSubmit').on("click", function( event ) {  
+    event.preventDefault();
+    // get values
+    var newsletterSubscribeEmail = document.getElementById('newsletterSubscribeEmail').value;
+    // save message
+    saveNewsletterSubscribe(newsletterSubscribeEmail);
+    window.alert('Thank You For Subscribing');
+    
+
+});
+
+
+
+
+function saveNewsletterSubscribe(newsletterSubscribeEmail){
+  var newsletterSubscribeSet = newsletterSubscribeRef.push();
+  newsletterSubscribeSet.set({
+    email: newsletterSubscribeEmail
+  });
+}
+
+
+*/

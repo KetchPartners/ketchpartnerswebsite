@@ -7,27 +7,35 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{root}}assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="manifest.json" />
     
-    <title>{{title}}</title>
-    <meta name="description" content="{{description}}">
-    <meta name="og:title" property="og:title" content="{{title}}">
+    <title>{{page-title}}</title>
+    <meta name="description" content="{{page-description}}">
+    <meta name="og:title" property="og:title" content="{{page-title}}">
     <meta name="robots" content="{{robots}}">
     <link href="{{canonical}}" rel="canonical">
-    <meta property="og:title" content="Your Title Here" />
-    <meta property="og:type" content="{{type}}" />
-    <meta property="og:url" content="{{canonical}}" />
-    <meta property="og:description" content="{{description}}" />
+    <meta property="fb:app_id" content="278376819536882" />
+    <meta property="og:title" content="{{og-title}}" />
+    <meta property="og:type" content="{{og-type}}" />
+    <meta property="og:url" content="{{og-url}}" />
+    <meta property="og:description" content="{{og-description}}" />
     <meta property="og:site_name" content="Ketch Partners" />
+    <meta name="twitter:card" content="{{twitter-summary}}">
+    <meta name="twitter:site" content="@KetchPartners">
+    <meta name="twitter:title" content="{{twitter-title}}">
+    <meta name="twitter:description" content="{{twitter-summary}}">
+    <meta name="twitter:creator" content="@{{twitter-author}}">
+    <meta name="twitter:image" content="{{twitter-image}}">
 
     <link rel="stylesheet" href="{{root}}assets/css/app.css?version=0.3">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-<!--remove for production php for echo date css file-->
+   <link rel="stylesheet" href="https://use.typekit.net/kzp0puw.css" />
 
 
     
 <!--GDPR Cookie Compliance - attribution goes to https://cookieconsent.insites.com/-->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script>
         window.addEventListener("load", function(){
@@ -50,115 +58,57 @@
     </script>
   </head>
 <body>
-<!--  <nav class="top-bar">
-   
-    <div class="grid-container">
-      <div class="title-bar" data-responsive-toggle="top-bar-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="top-bar-menu"></button>
-        <div class="title-bar-title">
-        </div>
-        <a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar-small.png" width="70%" alt="logo"></a>
-      </div>
-      
-      <div class="top-bar" id="top-bar-menu">
-        <div class="top-bar-left">
-          <ul class="menu">
-            <li class="menu-text hide-for-small-only"><a href="{{root}}index.html"><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo"></a></li>
 
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-          <li><a href="{{root}}index.html">Home</a></li>
-          <li><a href="{{root}}about.html">About</a></li>
-          <li><a href="{{root}}services.html">Services</a></li>
-          <li><a href="{{root}}industries.html">Industries</a></li>
-          <li><a href="{{root}}testimonials.html">Testimonials</a></li>
-          <li><button class="button" data-open="contact-form">Contact Us</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>    -->
+<div class="grid-container">
 <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
     <span data-responsive-toggle="topbar-responsive" data-hide-for="large">
       <button class="menu-icon" type="button" data-toggle></button>
     </span>
-    <a class="topbar-responsive-logo" href="{{root}}index.html"><strong><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo" /></strong></a>
+    <div itemscope itemtype="http://schema.org/Organization">
+     <meta itemprop="name" content="Ketch Partners" />
+     <a class="topbar-responsive-logo" href="{{root}}index.html" itemprop="url"><strong><img src="{{root}}assets/img/logo-top-bar.png" width="70%" alt="logo" itemprop="logo" /></strong></a>
+
+    </div>
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
-      <ul class="menu vertical medium-horizontal">
+      <ul class="menu vertical medium-horizontal" id="top-bar-small">
         <li class="text-center"><a href="{{root}}index.html">Home</a></li>
         <li class="text-center"><a href="{{root}}about.html">About</a></li>
         <li class="text-center"><a href="{{root}}services.html">Services</a></li>
         <li class="text-center"><a href="{{root}}industries.html">Industries</a></li>
         <li class="text-center"><a href="{{root}}testimonials.html">Testimonials</a></li>
+        <li class="text-center show-for-small-only"><a data-open="contact-form">Contacts</a></li>
 <!--        <li class="text-center"><a href="{{root}}articles.html">Articles</a></li>-->
         <li>
-          <button type="button" class="button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
+          <button type="button" class="hide-for-small-only button hollow topbar-responsive-button" data-open="contact-form">Contact</button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-
-
-<!-- This is the first modal -->
-<div class="reveal" id="contact-form" data-reveal>
-  <h1 class="text-center">Contact Us</h1>
-  <p class="lead">We’d Love to Hear From You, Get In Touch With Us!</p>
-  <p>Ketch</p>
-  <p>1075 Peachtree Street NE, Suite 3650</p>
-  <p>Atlanta, GA 30309 USA</p>
-  <p><i class="fas fa-envelope-open" aria-hidden="true"></i><a href="mailto:info@ketch.partners?Subject=Website%20Inquiry" target="_top">info@ketch.partners</a></p>
-  <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:1-404-996-0245">1-404-996-0245</a></p>
-   <p><i class="fas fa-fax" aria-hidden="true"></i>404-996-0243</p>
-   <h2 class="text-center">Request Information</h2>
-
-  <button class="button" id="contact-form-button" data-open="contact-form-question">Contact Us Online</button>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<!-- This is the nested modal -->
-<div class="reveal" id="contact-form-question" data-reveal>
-
-  <form class="callout secondary text-center" id="questionForm" method="post">
-  <h2>Submit Question for Information</h2>
-  <div class="floated-label-wrapper">
-    <label for="full-name">Full name</label>
-    <input type="text" id="questionName" name="full name input" placeholder="Full name">
-  </div>
-  <div class="floated-label-wrapper">
-    <label for="email">Email</label>
-    <input type="email" id="questionEmail" name="email input" placeholder="Email">
-  </div>
-  <div class="floated-label-wrapper">
-    <label for="question">Question</label>
-    <input type="text" id="questionMessage" name="question input" placeholder="Question?">
-  </div>
-  <input class="button expanded" id="questionSubmit" type="submit" value="Submit">
-  <div class="callout success hide" id="questionSuccess">Thank You For Your Inquiry, We Will Get Back To You Shortly.</div>
-</form>
-
-
-
-
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-
+ </div> 
 
 
 <div class="body-background">
 
 {{> body}}
+</div>
+
+<!-- This is the first modal -->
+<aside>
+{{> form-questionForm}}
+
+</aside>
+
+
+<div class="reveal" id="downloadModal" data-reveal>
+ <p class="text-center">Thank you for registering with Ketch Partners.</p>
+ <p class="text-center"><a class="button primary" id="downloadLink" target="_blank">Download Report Link</a></p>
+   <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
 
 <footer class="marketing-site-footer">
@@ -170,6 +120,7 @@
         <li><a href="https://www.youtube.com/channel/UCm5iewk4-UwL1FiG8dDiSgw" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i></a></li>
          <li><a href="https://www.linkedin.com/company/intenxus-llc" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
          <li><a href="https://github.com/KetchPartners" target="_blank"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
+         <li><a href="https://twitter.com/ketchpartners" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
     <div class="medium-4 columns" id="footer-contact">
@@ -180,7 +131,7 @@
       </div>
       <div class="marketing-site-footer-block">
         <i class="fas fa-phone" aria-hidden="true"></i>
-        <p><a href="tel:1-404-996-0245">1-404-996-0245</a></p>
+        <p><a href="tel:1-404-965-3571">1-404-965-3571</a></p>
       </div>
       <div class="marketing-site-footer-block">
         <i class="fas fa-envelope-open" aria-hidden="true"></i>
@@ -217,10 +168,63 @@
 </footer>
 
 
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  
+  var config = {
+    apiKey: "AIzaSyAmgp7FQ0KWhcWYOBQ97Oxh0u67gjbgXxk",
+    authDomain: "ketchpartnersproduction.firebaseapp.com",
+    databaseURL: "https://ketchpartnersproduction.firebaseio.com",
+    projectId: "ketchpartnersproduction",
+    storageBucket: "ketchpartnersproduction.appspot.com",
+    messagingSenderId: "787961167035"
+  };
+  firebase.initializeApp(config);
+
+
+  var storage = firebase.storage();
+
+
+</script>
+
+<script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.ketch.partners",
+  "name": "Ketch Partners",
+  "logo": "https://www.ketch.partners/assets/img/top-bar-logo.png",
+  "legalName": "Intenxus LLC",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-404-965-3571",
+    "faxNumber": "+1-404-996-0243",
+    "email": "info@ketch.partners",
+    "contactType": "Sales"
+  }
+}
+
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "about": "Technology service provider for SAP HANA enterprise applications",
+  "copyrightHolder": "Intenxus LLC",
+  "copyrightYear": "2018",
+  "name": "Ketch Partners Website"
+
+}
+</script>
+
+
+
 
 <script src="{{root}}assets/js/app.js?"></script>
+<script>var questionRef=firebase.database().ref("inqury");var $questionForm=$("#questionForm");$questionForm.submit(function(event){event.preventDefault();var questionData=$questionForm.serializeArray();questionRef.push(questionData,function(err){if(err){window.alert("Error when submitting data: "+err.message)}});$("#questionForm")[0].reset();$("#questionSuccess").fadeIn("slow").removeClass("hide")});var subscribeRef=firebase.database().ref("subscribe");$("#subscribeSubmit").on("click",function(event){event.preventDefault();var subscribeEmail=document.getElementById("subscribeEmail").value;saveSubscribe(subscribeEmail);var storage=firebase.app().storage("gs://ketchpartnersproduction.appspot.com");var storageRef=firebase.storage().ref();var newsletterRef=storageRef.child("newsletter/newsletter.pdf");newsletterRef.getDownloadURL().then(function(url){console.log(url);$("#downloadModal").foundation("open");$("#downloadLink").attr("href",url)})["catch"](function(error){switch(error.code){case"storage/object-not-found":alert("Download is not available at this time, please try again later");break;case"storage/unauthorized":alert("Server authorizatino error");break;case"storage/canceled":alert("Canceled");break;case"storage/unknown":alert("Download is not available at this time, please try again later");break;default:alert("Error");break}})});function saveSubscribe(subscribeEmail){var newSubscribeRef=subscribeRef.push();newSubscribeRef.set({email:subscribeEmail})}var newsletterSubscribeRef=firebase.database().ref("newsletterSubscribe");$("#newsletterSubscribeSubmit").on("click",function(event){event.preventDefault();var newsletterSubscribeEmail=document.getElementById("newsletterSubscribeEmail").value;saveNewsletterSubscribe(newsletterSubscribeEmail);window.alert("Thank You For Subscribing")});function saveNewsletterSubscribe(newsletterSubscribeEmail){var newsletterSubscribeSet=newsletterSubscribeRef.push();newsletterSubscribeSet.set({email:newsletterSubscribeEmail})}</script>
+
 <script id="dsq-count-scr" src="//ketch-partners.disqus.com/count.js" async></script>
 
 </body>
