@@ -27,7 +27,7 @@
     <meta name="twitter:creator" content="@{{twitter-author}}">
     <meta name="twitter:image" content="{{twitter-image}}">
 
-    <link rel="stylesheet" href="{{root}}assets/css/app.css?version=0.3">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css?version=1.0.1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.typekit.net/kzp0puw.css" />
 
@@ -103,13 +103,7 @@
 </aside>
 
 
-<div class="reveal" id="downloadModal" data-reveal>
- <p class="text-center">Thank you for registering with Ketch Partners.</p>
- <p class="text-center"><a class="button primary" id="downloadLink" target="_blank">Download Report Link</a></p>
-   <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+
 
 <footer class="marketing-site-footer">
   <div class="row medium-unstack">
@@ -222,8 +216,11 @@
 
 
 
-<script src="{{root}}assets/js/app.js?"></script>
-<script>var questionRef=firebase.database().ref("inqury");var $questionForm=$("#questionForm");$questionForm.submit(function(event){event.preventDefault();var questionData=$questionForm.serializeArray();questionRef.push(questionData,function(err){if(err){window.alert("Error when submitting data: "+err.message)}});$("#questionForm")[0].reset();$("#questionSuccess").fadeIn("slow").removeClass("hide")});var subscribeRef=firebase.database().ref("subscribe");$("#subscribeSubmit").on("click",function(event){event.preventDefault();var subscribeEmail=document.getElementById("subscribeEmail").value;saveSubscribe(subscribeEmail);var storage=firebase.app().storage("gs://ketchpartnersproduction.appspot.com");var storageRef=firebase.storage().ref();var newsletterRef=storageRef.child("newsletter/newsletter.pdf");newsletterRef.getDownloadURL().then(function(url){console.log(url);$("#downloadModal").foundation("open");$("#downloadLink").attr("href",url)})["catch"](function(error){switch(error.code){case"storage/object-not-found":alert("Download is not available at this time, please try again later");break;case"storage/unauthorized":alert("Server authorizatino error");break;case"storage/canceled":alert("Canceled");break;case"storage/unknown":alert("Download is not available at this time, please try again later");break;default:alert("Error");break}})});function saveSubscribe(subscribeEmail){var newSubscribeRef=subscribeRef.push();newSubscribeRef.set({email:subscribeEmail})}var newsletterSubscribeRef=firebase.database().ref("newsletterSubscribe");$("#newsletterSubscribeSubmit").on("click",function(event){event.preventDefault();var newsletterSubscribeEmail=document.getElementById("newsletterSubscribeEmail").value;saveNewsletterSubscribe(newsletterSubscribeEmail);window.alert("Thank You For Subscribing")});function saveNewsletterSubscribe(newsletterSubscribeEmail){var newsletterSubscribeSet=newsletterSubscribeRef.push();newsletterSubscribeSet.set({email:newsletterSubscribeEmail})}</script>
+<script src="{{root}}assets/js/app.js?version=1.0.1"></script>
+<script>
+  var questionRef=firebase.database().ref("inqury");var $questionForm=$("#questionForm");$questionForm.submit(function(event){event.preventDefault();var questionData=$questionForm.serializeArray();questionRef.push(questionData,function(err){if(err){window.alert("Error when submitting data: "+err.message)}});$("#questionForm")[0].reset();$("#questionSuccess").fadeIn("slow").removeClass("hide")});var subscribeRef=firebase.database().ref("subscribe");$("#downloadSubmit").on("click",function(event){event.preventDefault();var downloadEmail=document.getElementById("downloadEmail").value;saveDownload(downloadEmail);var storage=firebase.app().storage("gs://ketchpartnersproduction.appspot.com");var storageRef=firebase.storage().ref();var newsletterRef=storageRef.child("newsletter/newsletter.pdf");newsletterRef.getDownloadURL().then(function(url){console.log(url);$("#downloadModal").foundation("open");$("#downloadLink").attr("href",url)})["catch"](function(error){switch(error.code){case"storage/object-not-found":alert("Download is not available at this time, please try again later");break;case"storage/unauthorized":alert("Server authorizatino error");break;case"storage/canceled":alert("Canceled");break;case"storage/unknown":alert("Download is not available at this time, please try again later");break;default:alert("Error");break}})});function saveDownload(downloadEmail){var newSubscribeRef=subscribeRef.push();newSubscribeRef.set({email:downloadEmail})}var newsletterSubscribeRef=firebase.database().ref("newsletterSubscribe");$("#newsletterSubscribeSubmit").on("click",function(event){event.preventDefault();var newsletterSubscribeEmail=document.getElementById("newsletterSubscribeEmail").value;saveNewsletterSubscribe(newsletterSubscribeEmail);$("#newsletterForm")[0].reset();$("#newsletterSubscribeModal").foundation("open")});function saveNewsletterSubscribe(newsletterSubscribeEmail){var newsletterSubscribeSet=newsletterSubscribeRef.push();newsletterSubscribeSet.set({email:newsletterSubscribeEmail})}
+</script>
+
 
 <script id="dsq-count-scr" src="//ketch-partners.disqus.com/count.js" async></script>
 
