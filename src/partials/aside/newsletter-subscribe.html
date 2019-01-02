@@ -1,13 +1,21 @@
-<aside class="sticky" data-sticky data-anchor="newsletter-sticky">
+<aside>
 <div class="grid-container" id="guide-download-wrapper">
   <h3 class="text-center" id="guide-download-header">Free Guide of SAP Implementations</h3>
   <img src="{{root}}assets/img/ketch-client-case-studies-download.jpg" alt="Ketch SAP Implementation Guide" />
   <div class="callout" id="guide-download-container">
-    <form class="form-registration-group" action="" id="subscribeForm">
-    <input class="form-registration-input" type="email" placeholder="Your email" required id="subscribeEmail">
-    <input class="form-registration-submit-button" type="submit" value="Download" id="subscribeSubmit">
+    <form class="form-registration-group" action="" id="downloadForm">
+    <input class="form-registration-input" type="email" placeholder="Your email" required id="downloadEmail">
+    <input class="form-registration-submit-button" type="submit" value="Download" id="downloadSubmit">
 
   </form>
   </div>
 </div>
+<div class="reveal" id="downloadModal" data-reveal>
+ <p class="text-center">Thank you for registering with Ketch Partners.</p>
+ <p class="text-center"><a class="button primary" id="downloadLink" target="_blank">Download Report Link</a></p>
+   <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 </aside>
+
