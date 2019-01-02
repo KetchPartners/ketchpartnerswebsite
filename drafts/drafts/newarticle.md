@@ -1,0 +1,134 @@
+---
+layout: default
+page-title: 
+page-description: 
+canonical: https://ketch.partners/articles/
+robots: index,follow
+rating:
+og-title: 
+og-type: article
+og-url: 
+og-image: 
+og-description: 
+og-sitename: Ketch Partners
+fb-id:
+twitter-summary: 
+twitter-handle: ketchpartners
+twitter-title: 
+twitter-description: 
+twitter-author: 
+twitter-image: 
+datePublished:
+dateModified: 
+datePublishedDisplay: 
+author-name:
+---
+
+<div class="grid-container article-post-page"  id="newsletter-sticky">
+<div class="grid-x grid-margin-x">
+  <div class="cell large-9">
+
+<article class="simple-article-header" itemscope itemtype="http://schema.org/Article">
+  <!-- Article Published Date & Reading Time -->
+
+    <p class="article-date-read"><time itemprop="datePublished" datetime="{{datePublished}}">{{datePublishedDisplay}}</time> - 5 min read</p>
+  <meta itemprop="dateModified" content="{{dateModified}}" />
+  <div class="hide" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+  <p itemprop="name" class="hide">Ketch Partners<p>
+  <a href="{{root}}index.html" itemprop="url"><strong><img src="../assets/img/logo-top-bar.png" width="100px" alt="logo" itemprop="logo" /></strong></a>
+  </div>
+  <!-- Article Title -->
+  <h1 class="article-title" itemprop="headline">
+    <span><a href="{{canonical}}" itemprop="mainEntityOfPage">
+      {{page-title}}
+    </a></span>
+  </h1>
+
+  <!-- Article Author Name & Comment Hyperlink -->
+  <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="article-author-comments" itemprop="name">
+    <em>by <a href="#about-author">{{author-name}}</a></em> </p>
+  </div>
+
+  <!-- Article Social Links -->
+<!--  <div class="article-social">
+    <a href="#" class="button social facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="button social twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="button social linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+    <a href="#" class="button social google-plus">
+      <i class="fab fa-google-plus fa-lg" aria-hidden="true"></i>
+    </a>
+  </div>-->
+
+  <!-- Article Image -->
+  <div class="article-post-image">
+    <div class="thumbnail">
+      <img class="article-image" src="{{root}}assets/img/articles/" alt="" itemprop="image" />
+    </div>
+  </div>
+
+  <!-- Article Post Content -->
+  <div class="article-post-content" itemprop="articleBody">
+{{#markdown}} 
+
+{{/markdown}}
+  </div>
+}
+}
+</article>
+
+
+
+<div class="callout about-author" id="about-author">
+{{> about-author-}}
+</div>
+
+<div class="callout comments">
+  <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      var disqus_config = function () {
+      this.page.url = 'https://ketch.partners/articles/';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ketch-partners.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ </div>
+
+  </div>
+  <div class="cell large-3">
+
+{{> newsletter-subscribe}}
+
+
+
+  </div>
+
+</div>
+</div>   
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
